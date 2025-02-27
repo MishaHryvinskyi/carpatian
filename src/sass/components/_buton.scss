@@ -1,0 +1,38 @@
+.primari-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    color: getColor('primary');
+    background-color: getColor('accent');
+    border: none;
+    margin: 0 auto;
+
+    @media screen and (min-width: 320px) and(max-width: 480px) {
+       font-size: getSize('small');
+       padding: 15px;
+       width: 285px;
+    }
+
+    @media screen and (min-width: 320px) and(max-width: 375px) {
+    
+    }
+
+    @media screen and (min-width: 480px) and(max-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 768px) and(max-width: 1439px) {
+        width: 394px;
+        font-size: getSize('medium');
+        padding: 16px 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 575px;
+        font-size: getSize('large');
+        padding: 20px 0;
+    }
+}
