@@ -1,0 +1,110 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.questions__wrapper {
+    margin: 0 auto;
+    background-color: getColor('primary');
+}
+
+.questions__title {
+    text-align: center;
+}
+
+.questions__description {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.questions__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & input {
+        padding: 8px;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .questions {
+        padding: 116px 0;
+        width: 375px;
+        height: 632px;
+        background-image: url(../images/questions/questyons-bg-mobile-1x.jpg);
+    }  
+    
+    .questions__wrapper {
+        width: 311px;
+        height: 399px;
+    }
+    
+    .questions__description {
+        width: 243px;
+        margin-bottom: 24px;
+    }
+
+    .questions__form {
+        & input {
+            width: 271px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .questions {
+        padding: 88px 0;
+        width: 768px;
+        height: 688px;
+        background-image: url(../images/questions/questyons-bg-tablet-1x.jpg); 
+    } 
+
+    .questions__wrapper {
+        width: 478px;
+        height: 512px;
+    }
+
+    .questions__description {
+        width: 374px;
+        margin-bottom: 32px;
+    }
+
+    .questions__form {
+        & input {
+            width: 394px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .questions {
+        padding: 244px 0;
+        width: 1440px;
+        height: 1074px;
+        background-image: url(../images/questions/questyons-bg-desk-1x.jpg);
+    } 
+
+    .questions__wrapper {
+        width: 774px;
+        height: 583px;
+    }
+
+    .questions__description {
+        width: 502px;
+        margin-bottom: 44px;
+    }
+
+    .questions__form {
+        & input {
+            width: 575px;
+        }
+    }
+}
