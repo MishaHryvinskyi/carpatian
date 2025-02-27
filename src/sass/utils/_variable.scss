@@ -1,0 +1,20 @@
+$colors: (
+    'primary': #F7FBFB,
+    'accent': #5B86A1,
+    'black': #1B1D1B,
+    'black-secondary': #202321
+);
+
+$size: (
+    'small': 16px,
+    'medium': 20px,
+    'large': 24px,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+@function getSize($key) {
+    @return map-get($size, $key);
+}
