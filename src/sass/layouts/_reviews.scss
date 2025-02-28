@@ -1,0 +1,132 @@
+.reviews__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews__item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid getColor('accent');
+    border-top: none;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.reviews__title {
+    color: getColor('accent');
+    text-align: center;
+    font-weight: 600;
+
+    &::before {
+        content: "";
+        display: flex;
+        background-size: contain;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    & + p {
+        font-size: getSize('medium');
+    }
+}
+
+@each $people in maria, ostap, anita {
+    .#{$people}-title::before {
+      background-image: url('../images/reviews/#{$people}.png');
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .reviews__list {
+        flex-direction: column;
+
+        & .reviews__item:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+    
+    .reviews__item {
+        width: 311px;
+        height: 452px;
+        padding: 84px 35px 0 35px;
+        background-image: url(../images/reviews/Review-bg-mobile-1x.jpg);
+    }
+    
+    .reviews__title {
+        font-size: getSize('medium');
+        margin-bottom: 16px;
+
+        &::before {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        & + p {
+            font-size: getSize('small');
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .reviews__list {
+        & .reviews__item:first-child {
+            margin-right: 20px;
+        }
+    }
+
+    .hidde {
+        display: none;
+    }
+
+    .reviews__item {
+        width: 354px;
+        height: 453px;
+        padding: 84px 20px 0 20px;
+        background-image: url(../images/reviews/Review-bg-tablet-1x.jpg);
+    }
+    
+    .reviews__title {
+        font-size: getSize('large');
+
+        &::before {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .reviews__title {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .reviews__list {
+        & .reviews__item:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    .reviews__item {
+        width: 377px;
+        height: 570px;
+        padding: 72px 28px 0 28px;
+        background-image: url(../images/reviews/Review-bg-desk-1x.jpg);
+    }
+
+    .reviews__title {
+        font-size: getSize('large-f');
+
+        &::before {
+            width: 125px;
+            height: 125px;
+            margin-bottom: 20px;
+        }
+    }
+}
