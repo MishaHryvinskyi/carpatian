@@ -13,7 +13,10 @@
 }
 
 .questions__title {
+    color: getColor('black');
     text-align: center;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .questions__description {
@@ -30,7 +33,7 @@
     & input {
         padding: 8px;
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid getColor('input-border-color');
     }
 }
 
@@ -47,15 +50,32 @@
         height: 399px;
     }
     
+    .questions__title {
+        width: 159px;
+        margin: 28px auto 20px auto;
+        font-size: getSize('medium');
+    }
+
+    .questions__title-brake {
+        display: block;
+    }
+
     .questions__description {
+        font-size: getSize('little');
         width: 243px;
         margin-bottom: 24px;
     }
-
-    .questions__form {
-        & input {
-            width: 271px;
+ 
+    .questions__input {
+        width: 271px;
+        font-size: getSize('small');
+        &:not(:last-of-type) {
+            margin-bottom: 12px;
         }
+    }
+
+    .questions__form > button {
+        margin-top: 24px;
     }
 }
 
@@ -72,15 +92,32 @@
         height: 512px;
     }
 
+    .questions__title {
+        width: 247px;
+        margin: 40px auto 24px auto;
+        font-size: getSize('more-lage');
+    }
+
+    .questions__title-brake {
+        display: block;
+    }
+
     .questions__description {
+        font-size: getSize('little-small');
         width: 374px;
         margin-bottom: 32px;
     }
 
-    .questions__form {
-        & input {
-            width: 394px;
+    .questions__input {
+        width: 394px;
+        font-size: getSize('medium');
+        &:not(:last-of-type) {
+            margin-bottom: 16px;
         }
+    }
+
+    .questions__form > button {
+        margin-top: 32px;
     }
 }
 
@@ -97,14 +134,27 @@
         height: 583px;
     }
 
+    .questions__title {
+        width: 681px;
+        margin: 60px auto 32px auto;
+        font-size: getSize('big-size');
+    }
+
     .questions__description {
+        font-size: getSize('medium');
         width: 502px;
         margin-bottom: 44px;
     }
 
-    .questions__form {
-        & input {
-            width: 575px;
+    .questions__input {
+        width: 575px;
+        font-size: getSize('large');
+        &:not(:last-of-type) {
+            margin-bottom: 20px;
         }
+    }
+
+    .questions__form > button {
+        margin-top: 44px;
     }
 }
