@@ -2,13 +2,18 @@ $colors: (
     'primary': #F7FBFB,
     'accent': #5B86A1,
     'black': #1B1D1B,
-    'black-secondary': #202321
+    'black-secondary': #202321,
+    'input-border-color': #A3A5A3,
 );
 
 $size: (
+    'little': 14px,
+    'little-small': 18px,
     'small': 16px,
     'medium': 20px,
     'large': 24px,
+    'more-lage': 32px,
+    'big-size': 48px, 
 );
 
 @function getColor($key) {
