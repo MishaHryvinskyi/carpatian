@@ -1,0 +1,19 @@
+.title {
+    text-align: center;
+    color: getColor('black');
+    line-height: normal;
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        margin-bottom: 28px;
+        font-size: getSize('more-lage');
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+        margin-bottom: 40px;
+        font-size: getSize('big');
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-bottom: 60px;
+        font-size: getSize('very-big');
+    }
+}
