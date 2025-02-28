@@ -14,6 +14,8 @@ $size: (
     'large': 24px,
     'more-lage': 32px,
     'big-size': 48px, 
+    'big': 52px,
+    'very-big': 68px,
 );
 
 @function getColor($key) {

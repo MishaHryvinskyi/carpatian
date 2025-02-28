@@ -7,6 +7,10 @@
 // utils
 @import './utils/variable';
 // components
+@import './components/container';
+@import './components/section';
+@import './components/title';
 @import './components/buton';
 // layout
+@import './layouts/about';
 @import './layouts/questions';
