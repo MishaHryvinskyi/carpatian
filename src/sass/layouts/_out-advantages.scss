@@ -1,0 +1,84 @@
+.advantages__list {
+    display: flex;
+    flex-direction: column;
+    color: getColor('primary');
+    line-height: normal;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advantages__item {
+    background-color: getColor('accent');
+}
+
+.description-star {
+    display: flex;
+    align-items: center;
+}
+
+.description-star::before {
+    content: "";
+    display: block;
+    background-image: url(../images/reviews/star.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .advantages__list {
+        padding: 87px 0;
+        background-image: url(../images/our-advantages/advantages-mobile-1x.jpg);
+        font-size: getSize('little');
+
+        & .advantages__item:not(:last-child) {
+            margin-bottom: 28px;
+        }
+    }
+
+    .advantages__item {
+        width: 100%;
+        padding: 11px 0;
+    }
+
+    .description-star::before {
+        margin: 0 8px 0 30px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .advantages__list {
+        align-items: center;
+        justify-content: center;
+        padding: 80px 0;
+        font-size: getSize('medium');
+        background: 
+        url('../images/our-advantages/advantages-tablet-1x.jpg') no-repeat top left,
+        url('../images/our-advantages/advantages-2-tablet-1x.jpg') no-repeat bottom right;
+
+        & .advantages__item:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .advantages__item {
+        width: 604px;
+        padding: 12px 0;
+    }
+
+    .description-star::before {
+        margin: 0 12px 0 44px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .advantages__list {
+        font-size: getSize('large');
+    }
+}
