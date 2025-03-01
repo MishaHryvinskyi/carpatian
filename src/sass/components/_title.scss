@@ -2,6 +2,11 @@
     text-align: center;
     color: getColor('black');
     line-height: normal;
+
+    @media screen and (min-width: 320px) and (max-width: 374px) {
+        margin-bottom: 20px;
+        font-size: getSize('lage');
+    }
     @media screen and (min-width: 375px) and (max-width: 767px) {
         margin-bottom: 28px;
         font-size: getSize('more-lage');

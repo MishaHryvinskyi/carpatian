@@ -61,10 +61,52 @@
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .reviews__list {
+        & .reviews__item:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .reviews__item {
+        width: 280px;
+        height: 452px;
+        padding: 84px 20px 0 20px;
+        background-image: url(../images/reviews/Review-bg-mobile-1x.jpg);
+    }
+
+    .reviews__item-bg.maria {
+        background-image: url(../images/reviews/maria-bg/maria-bg-mobile-1x.jpg);
+    }
+
+    .reviews__item-bg.ostap {
+        background-image: url(../images/reviews/ostap-bg/ostap-bg-mobile-1x.jpg);
+    }
+
+    .reviews__title {
+        font-size: getSize('medium');
+        margin-bottom: 16px;
+
+        &::before {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        & + p {
+            font-size: getSize('small');
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .reviews__list {
         flex-direction: column;
+    }
+}
 
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .reviews__list {
         & .reviews__item:not(:last-child) {
             margin-bottom: 32px;
         }
@@ -152,7 +194,7 @@
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 1439px) {
+@media screen and (min-width: 320px) and (max-width: 1439px) {
     .hidde {
         display: none;
     }
