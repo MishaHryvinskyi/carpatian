@@ -7,12 +7,15 @@
 // utils
 @import './utils/variable';
 // components
+@import './components/logo';
 @import './components/container';
 @import './components/section';
 @import './components/title';
 @import './components/buton';
 @import './components/social-icon';
 // layout
+@import './layouts/header';
+@import './layouts/hero';
 @import './layouts/about';
 @import './layouts/out-advantages';
 @import './layouts/reviews';
