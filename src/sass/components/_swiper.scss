@@ -1,19 +1,117 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
 .swiper-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
+  display: flex;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.gallery__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__button-next,
+.gallery__button-prev {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+} 
+
+@media screen and (min-width:320px) and (max-width: 1439px) {
+  .gallery__button-next {
+    margin-right: 20px;
   }
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .gallery__button-prev {
+    margin-left: 20px;
   }
+}
 
+@media screen and (min-width:320px) and  (max-width: 767px) {
+  .gallery__button-next,
+  .gallery__button-prev {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .swiper-slide img {
-    display: block;
-    object-fit: cover;
+    min-width: 280px;
   }
+
+  .swiper-wrapper {
+    margin-bottom: 24px;
+  }
+
+  .gallery {
+    margin-bottom: 52px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .swiper-slide img {
+    min-width: 354px;
+  }
+
+  .swiper-wrapper {
+    margin-bottom: 32px;
+  }
+
+  .gallery__button-next,
+  .gallery__button-prev {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide {
+    width: 1170px;
+  }
+
+  .gallery {
+    width: 1440px;
+  }
+
+  .swiper-wrapper {
+    margin-bottom: 40px;
+  }
+
+.gallery__button-next,
+.gallery__button-prev {
+  width: 40px;
+  height: 40px;
+}
+
+.gallery__button-next {
+  margin-right: 30px;
+}
+
+.gallery__button-prev {
+  margin-left: 30px;
+}
+}
+
