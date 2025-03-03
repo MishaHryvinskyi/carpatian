@@ -1,5 +1,3 @@
-import Swiper from 'swiper';
-
 export const gallerySwiper = new Swiper(".mySwiper", {
     loop: true,
     navigation: {
