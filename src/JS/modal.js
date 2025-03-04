@@ -1,8 +1,26 @@
-const optnBtn = document.querySelector('.hero-btn-js');
 const backdrop = document.querySelector('.backdrop-hero');
 
-optnBtn.addEventListener('click', onToggleModal)
+export function openModal () {
+    document.body.style.overflow = "hidden"
+    window.addEventListener('keydown', onEscPress);
+    backdrop.classList.remove('is-hidden');
+}
 
-function onToggleModal () {
-    backdrop.classList.toggle('.is-hidden')
+export function closeModal () {
+    document.body.style.overflow = ""
+    window.removeEventListener('keydown', onEscPress);
+    backdrop.classList.add('is-hidden');
+}
+
+export function onBackDropClick(e) {
+    if(e.target === e.currentTarget) {
+        closeModal();
+    }
+}
+
+export function onEscPress(e) {
+    const ESC_KEY_CODE = 'Escape';
+    if(e.code === ESC_KEY_CODE) {
+        closeModal()
+    };
 }
