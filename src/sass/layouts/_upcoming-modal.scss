@@ -1,0 +1,420 @@
+.upcoming-backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(32, 35, 33, 0.60);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 800;
+}
+
+.upcoming-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: getColor('primary');
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+    color: getColor('primary');
+}
+
+.upcoming-backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.upcoming-modal__title {
+    font-weight: 600;
+}
+
+.upcoming-modal__day {
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    background-color: getColor('accent');
+    border-radius: 0px 8px 8px 0;
+}
+
+.upcoming-modal__list {
+    font-weight: 500;
+}
+
+.upcoming-modal__panel {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 48px 0 60px;
+    z-index: 990;
+    color: getColor('black');
+
+    & > p {
+        font-weight: 600;
+    }
+}
+
+.modalSwiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: getColor('input-border-color');
+    opacity: 0.6;
+}
+
+.modalSwiper .swiper-pagination-bullet-active {
+    background-color: getColor('primary');
+    opacity: 1;
+}
+
+.day-1,
+.day-2,
+.day-3 {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.upcoming-btn-close {
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    z-index: 999;
+
+    & > svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+   .upcoming-modal {
+        width: 315px;
+        height: 624px;
+   } 
+   
+   .upcoming-modal__panel {
+        padding: 28px 20px;
+
+        & > p {
+            font-size: getSize('small');
+            margin-bottom: 16px;
+        }
+
+        & > .primari-btn {
+            width: 100%;
+        }
+    }
+
+    .swiper-slide.hoverla-modal {
+        height: 480px;
+        padding: 54px 48px 0 48px;
+    }
+
+    .upcoming-modal__title {
+        font-size: getSize('little-small');
+        margin-bottom: 12px;
+    }
+
+    .fupcoming-modal__list,
+    .upcoming-modal__panel, 
+    .upcoming-modal__day {
+        font-size: getSize('small');
+    }
+
+    .upcoming-modal__day {
+        padding: 14px 190px 14px 48px;
+    }
+
+    .upcoming-modal__list {
+        margin-top: 72px;
+
+        & .upcoming-modal__item:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+    
+    .day-1 {
+        background-image: url(../images/upcoming-modal/hoverla-day-1-mobile-1x.jpg);
+    }
+    .day-2 {
+        background-image: url(../images/upcoming-modal/hoverla-day-2-mobile-1x.jpg);
+    }
+    .day-3 {
+        background-image: url(../images/upcoming-modal/hoverla-day-3-mobile-1x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+           .day-1 {
+                background-image: url(../images/upcoming-modal/hoverla-day-1-mobile-2x.jpg);
+            }
+            .day-2 {
+                background-image: url(../images/upcoming-modal/hoverla-day-2-mobile-2x.jpg);
+            }
+            .day-3 {
+                background-image: url(../images/upcoming-modal/hoverla-day-3-mobile-2x.jpg);
+            }
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+           .day-1 {
+                background-image: url(../images/upcoming-modal/hoverla-day-1-mobile-3x.jpg);
+            }
+            .day-2 {
+                background-image: url(../images/upcoming-modal/hoverla-day-2-mobile-3x.jpg);
+            }
+            .day-3 {
+                background-image: url(../images/upcoming-modal/hoverla-day-3-mobile-3x.jpg);
+            }
+        }
+
+        @media screen and (min-device-pixel-ratio: 4),
+        (-webkit-min-device-pixel-ratio: 4),
+        screen and (min-resolution: 384dpi),
+        screen and (min-resolution: 4dppx) {
+           .day-1 {
+                background-image: url(../images/upcoming-modal/hoverla-day-1-mobile-4x.jpg);
+            }
+            .day-2 {
+                background-image: url(../images/upcoming-modal/hoverla-day-2-mobile-4x.jpg);
+            }
+            .day-3 {
+                background-image: url(../images/upcoming-modal/hoverla-day-3-mobile-4x.jpg);
+            }
+        }
+
+    .swiper-pagination {
+        margin-bottom: 164px;
+    }
+
+    .upcoming-btn-close {
+        top: 12;
+        right: 12;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .upcoming-modal {
+        width: 728px;
+        height: 734px;
+    }
+
+    .upcoming-modal__panel {
+        padding: 40px 0;
+
+        & > p {
+            font-size: getSize('medium');
+            margin-bottom: 24px;
+        }
+    }
+
+    .swiper-slide.hoverla-modal {
+        height: 550px;
+        padding: 60px 60px 0 60px;
+    }
+
+    .upcoming-modal__title {
+        font-size: getSize('large');
+        margin-bottom: 12px;
+    }
+
+    .upcoming-modal__list,
+    .upcoming-modal__panel, 
+    .upcoming-modal__day {
+        font-size: getSize('medium');
+    }
+
+    .upcoming-modal__day {
+        padding: 12px 253px 12px 60px;
+    }
+    
+    .day-1 {
+        background-image: url(../images/upcoming-modal/hoverla-day-1-tablet-1x.jpg);
+    }
+    .day-2 {
+        background-image: url(../images/upcoming-modal/hoverla-day-2-tablet-1x.jpg);
+    }
+    .day-3 {
+        background-image: url(../images/upcoming-modal/hoverla-day-3-tablet-1x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+           .day-1 {
+                background-image: url(../images/upcoming-modal/hoverla-day-1-tablet-2x.jpg);
+            }
+            .day-2 {
+                background-image: url(../images/upcoming-modal/hoverla-day-2-tablet-2x.jpg);
+            }
+            .day-3 {
+                background-image: url(../images/upcoming-modal/hoverla-day-3-tablet-2x.jpg);
+            }
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+           .day-1 {
+                background-image: url(../images/upcoming-modal/hoverla-day-1-tablet-3x.jpg);
+            }
+            .day-2 {
+                background-image: url(../images/upcoming-modal/hoverla-day-2-tablet-3x.jpg);
+            }
+            .day-3 {
+                background-image: url(../images/upcoming-modal/hoverla-day-3-tablet-3x.jpg);
+            }
+        }
+
+        @media screen and (min-device-pixel-ratio: 4),
+        (-webkit-min-device-pixel-ratio: 4),
+        screen and (min-resolution: 384dpi),
+        screen and (min-resolution: 4dppx) {
+           .day-1 {
+                background-image: url(../images/upcoming-modal/hoverla-day-1-tablet-4x.jpg);
+            }
+            .day-2 {
+                background-image: url(../images/upcoming-modal/hoverla-day-2-tablet-4x.jpg);
+            }
+            .day-3 {
+                background-image: url(../images/upcoming-modal/hoverla-day-3-tablet-4x.jpg);
+            }
+        }
+
+    .swiper-pagination {
+        margin-bottom: 204px;
+    }
+
+    .upcoming-btn-close {
+        top: 20;
+        right: 20;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .upcoming-modal__list {
+        margin-top: 72px;
+
+        & .upcoming-modal__item:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .upcoming-modal {
+        width: 1170px;
+        height: 976px;
+    }
+
+    .upcoming-modal__panel {
+        padding: 48px 0 60px;
+
+        & > p {
+            font-size: getSize('large');
+            margin-bottom: 28px;
+        }
+    }
+
+    .swiper-slide.hoverla-modal {
+        height: 742px;
+        padding: 108px 100px 0 100px;
+    }
+
+    .upcoming-modal__title {
+        font-size: getSize('large-40');
+        margin-bottom: 12px;
+    }
+
+    .upcoming-modal__list,
+    .upcoming-modal__panel, 
+    .upcoming-modal__day {
+        font-size: getSize('large-f');
+    }
+
+    .upcoming-modal__day {
+        padding: 7px 307px 7px 100px;
+    }
+    
+    .day-1 {
+        background-image: url(../images/upcoming-modal/hoverla-day-1-desktop-1x.jpg);
+    }
+    .day-2 {
+        background-image: url(../images/upcoming-modal/hoverla-day-2-desktop-1x.jpg);
+    }
+    .day-3 {
+        background-image: url(../images/upcoming-modal/hoverla-day-3-desktop-1x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+           .day-1 {
+                background-image: url(../images/upcoming-modal/hoverla-day-1-desktop-2x.jpg);
+            }
+            .day-2 {
+                background-image: url(../images/upcoming-modal/hoverla-day-2-desktop-2x.jpg);
+            }
+            .day-3 {
+                background-image: url(../images/upcoming-modal/hoverla-day-3-desktop-2x.jpg);
+            }
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+           .day-1 {
+                background-image: url(../images/upcoming-modal/hoverla-day-1-desktop-3x.jpg);
+            }
+            .day-2 {
+                background-image: url(../images/upcoming-modal/hoverla-day-2-desktop-3x.jpg);
+            }
+            .day-3 {
+                background-image: url(../images/upcoming-modal/hoverla-day-3-desktop-3x.jpg);
+            }
+        }
+
+        @media screen and (min-device-pixel-ratio: 4),
+        (-webkit-min-device-pixel-ratio: 4),
+        screen and (min-resolution: 384dpi),
+        screen and (min-resolution: 4dppx) {
+           .day-1 {
+                background-image: url(../images/upcoming-modal/hoverla-day-1-desktop-4x.jpg);
+            }
+            .day-2 {
+                background-image: url(../images/upcoming-modal/hoverla-day-2-desktop-4x.jpg);
+            }
+            .day-3 {
+                background-image: url(../images/upcoming-modal/hoverla-day-3-desktop-4x.jpg);
+            }
+        }
+
+    .swiper-pagination {
+        margin-bottom: 277px;
+    }
+
+    .upcoming-btn-close {
+        top: 40;
+        right: 40;
+    }
+}
