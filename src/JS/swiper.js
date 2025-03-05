@@ -35,24 +35,24 @@ export const gallerySwiper = new Swiper(".mySwiper", {
     speed: 1000,
   });
 
-  export const modalSwiper = new Swiper(".modalSwiper", {
-    loop: false,
-    spaceBetween: 20,
-    slidesPerView: 1,
-    breakpoints: {
-      320: { slidesPerView: 1 },
-      375: { slidesPerView: 1 },
-      768: { slidesPerView: 1 },
-      1440: { slidesPerView: 1 },
-    },
-    keyboard: { enabled: true },
-    autoplay: {
-      delay: 10000,
-      pauseOnMouseEnter: true,
-    },
-    speed: 1000,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+  // export const modalSwiper = new Swiper(".modalSwiper", {
+  //   loop: false,
+  //   spaceBetween: 20,
+  //   slidesPerView: 1,
+  //   breakpoints: {
+  //     320: { slidesPerView: 1 },
+  //     375: { slidesPerView: 1 },
+  //     768: { slidesPerView: 1 },
+  //     1440: { slidesPerView: 1 },
+  //   },
+  //   keyboard: { enabled: true },
+  //   autoplay: {
+  //     delay: 10000,
+  //     pauseOnMouseEnter: true,
+  //   },
+  //   speed: 1000,
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //   },
+  // });
