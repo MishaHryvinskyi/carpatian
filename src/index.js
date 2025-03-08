@@ -12,6 +12,14 @@ const upcomingClose = document.querySelector('.upcoming-btn-close-js');
 const backdropUpcoming = document.querySelector('.upcoming-backdrop');
 
 
+const heroDescr = document.querySelector('.hero__description')
+const heroTitle = document.querySelector('.hero__title');
+const mobileMeny = document.querySelector('.mobile-menu');
+const btnOpenMeny = document.querySelector('.menu');
+const disabledBtn = document.querySelector('.primari-btn');
+
+btnOpenMeny.addEventListener('click', menuOpen)
+
 // modal-hero
 optnBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
@@ -22,3 +30,11 @@ bukovelOpen.addEventListener('click', openUpcomingModal);
 carpatiansOpen.addEventListener('click', openUpcomingModal);
 upcomingClose.addEventListener('click', closeUpcomingModal);
 backdropUpcoming.addEventListener('click', onBackDropClick);
+
+
+function menuOpen() {
+    mobileMeny.classList.toggle('open');
+    disabledBtn.classList.toggle('btn-disabled');
+    heroTitle.classList.toggle('btn-disabled');
+    heroDescr.classList.toggle('btn-disabled');
+}
