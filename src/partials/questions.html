@@ -7,9 +7,9 @@
             back within 10 minutes
         </p>
         <form class="questions__form">
-            <input class="questions__input" type="text" placeholder="Your name*">
-            <input class="questions__input" type="tel" placeholder="Phone number*">
-            <input class="questions__input" type="text" placeholder="What would you like to know?">
+            <input class="questions__input" type="text" placeholder="Your name*" pattern="[A-Za-z\s]+" required>
+            <input class="questions__input" type="tel" placeholder="Phone number*" pattern="^\+?\d{1,4}?[\s.-]?\(?\d{1,3}?\)?[\s.-]?\d{1,4}[\s.-]?\d{1,4}[\s.-]?\d{1,9}$" required>
+            <input class="questions__input" type="text" placeholder="What would you like to know?" required>
             <button class="primari-btn">CALL ME</button>
         </form>
     </div>
