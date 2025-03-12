@@ -1,25 +1,8 @@
 import { gallerySwiper } from "./JS/swiper";
-import { openModal, closeModal, onBackDropClick, openUpcomingModal, closeUpcomingModal } from "./JS/modal";
-
-const optnBtn = document.querySelector('.hero-btn-js');
-const backdrop = document.querySelector('.backdrop-hero');
-const closeBtn = document.querySelector('.close-js');
-
-const hoverlaOpen = document.querySelector('.open-hoverla-js');
-const bukovelOpen = document.querySelector('.open-bukovel-js');
-const carpatiansOpen = document.querySelector('.open-carpatian-js');
-const upcomingClose = document.querySelector('.upcoming-btn-close-js');
-const backdropUpcoming = document.querySelector('.upcoming-backdrop');
-
-
-const heroDescr = document.querySelector('.hero__description')
-const heroTitle = document.querySelector('.hero__title');
-const mobileMeny = document.querySelector('.mobile-menu');
-const btnOpenMeny = document.querySelector('.menu');
-const disabledBtn = document.querySelector('.primari-btn');
-
-btnOpenMeny.addEventListener('click', menuOpen)
-
+import { menuOpen, closeMenu } from "./JS/mobile-menu";
+import { openModal, closeModal, onBackDropClick, closeUpcomingModal, openUpcomingModal } from "./JS/modal";
+import { refs } from "./JS/refs";
+const { optnBtn, closeBtn, backdrop, hoverlaOpen, bukovelOpen, carpatiansOpen, upcomingClose, backdropUpcoming, btnOpenMeny} = refs;
 // modal-hero
 optnBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
@@ -30,11 +13,17 @@ bukovelOpen.addEventListener('click', openUpcomingModal);
 carpatiansOpen.addEventListener('click', openUpcomingModal);
 upcomingClose.addEventListener('click', closeUpcomingModal);
 backdropUpcoming.addEventListener('click', onBackDropClick);
+// mobile-menu
+btnOpenMeny.addEventListener('click', menuOpen);
 
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1440) {
+        closeMenu();
+    }
+});
 
-function menuOpen() {
-    mobileMeny.classList.toggle('open');
-    disabledBtn.classList.toggle('btn-disabled');
-    heroTitle.classList.toggle('btn-disabled');
-    heroDescr.classList.toggle('btn-disabled');
-}
+document.querySelectorAll('.header-nav__item a').forEach(link => {
+    link.addEventListener('click', () => {
+        closeMenu();
+    });
+});
