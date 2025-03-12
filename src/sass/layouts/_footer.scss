@@ -1,6 +1,11 @@
 .footer {
+    font-weight: 400;
     color: getColor('primary');
     background-color: getColor('black-secondary');
+}
+
+.footer__title {
+    font-weight: 400;
 }
 
 .footer__link {

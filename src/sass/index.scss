@@ -1,11 +1,9 @@
 @import './vendors/common';
-@import './example';
-// base
-@import './base/reset';
-@import './base/reset';
-
 // utils
 @import './utils/variable';
+// base
+@import './base/base';
+@import './base/reset';
 // components
 @import './components/logo';
 @import './components/container';
