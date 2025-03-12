@@ -11,6 +11,10 @@
 .footer__link {
     display: flex;
     align-items: center;
+
+    & > svg {
+        fill: getColor('primary');
+    }
 }
 
 .footer__rights {

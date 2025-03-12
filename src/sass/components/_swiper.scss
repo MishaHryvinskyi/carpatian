@@ -33,7 +33,12 @@
   background-color: inherit;
 } 
 
-.gallery__button-prev:hover .swiper-svg {
+.swiper-svg {
+  fill: getColor('input-border-color');
+}
+
+.gallery__button-prev:hover .swiper-svg,
+.gallery__button-next:hover .swiper-svg {
   fill: getColor('accent');
 } 
 
