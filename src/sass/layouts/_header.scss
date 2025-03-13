@@ -29,12 +29,21 @@
 
 .menu {
     display: flex;
+    align-items: center;
     cursor: pointer;
     width: 40px;
     height: 40px;
     background-color: inherit;
     border: none;
+
+    & > svg {
+        width: 30px;
+        height: 30px;
+        fill: getColor('primary');
+    }
 }
+
+
 
 .mobile-menu {
     transition: transform 0.3s ease-in-out;
