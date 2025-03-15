@@ -21,16 +21,16 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .sw-container {
-        max-width: 311px;
+        max-width: 335px;
     }
-    
+
     .upcoming__item {
         padding: 366px 20px 28px 20px;
     }
 
     .upcoming__title {
         font-size: getSize('medium');
-        margin-bottom: 16px;
+        margin: 28px 0 16px 0;
     }
 
     .upcoming__description {
@@ -109,13 +109,12 @@
     
     .upcoming__item {
         width: 354px;
-        height: 622px;
-        padding: 405px 20px 48px 20px;
+        padding: 357px 20px 48px 20px;
     }
 
     .upcoming__title {
         font-size: getSize('large');
-        margin-bottom: 20px;
+        margin: 48px 0 20px 0;
     }
 
     .upcoming__description {

@@ -1,8 +1,6 @@
 .primari-btn {
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     text-align: center;
     font-weight: 500;
     color: getColor('primary');

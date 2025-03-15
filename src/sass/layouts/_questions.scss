@@ -1,6 +1,4 @@
 .questions {
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,12 +23,11 @@
 }
 
 .questions__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    & > button {
+        width: 100%;
+    }
     .questions__input {
+        width: 100%;
         padding: 8px;
         border: none;
         border-bottom: 1px solid getColor('input-border-color');
@@ -38,65 +35,12 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 374px) {
-    .questions__wrapper {
-        width: 256px;
-    }
-
-    .questions__title {
-        width: 139px;
-        margin: 24px auto 16px auto;
-    }
-
-    .questions__description {
-        width: 200px;
-    }
-
-    .questions__input {
-        width: 200px;
-    }
-
-    .questions__form > button {
-        width: 200px;
-    }
-}
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .questions {
         padding: 116px 0;
         width: 100%;
-        height: 632px;
         background-image: url(../images/questions/questyons-bg-mobile-1x.jpg);
-    }
-
-    .questions__wrapper {
-        height: 399px;
-    }
-
-    .questions__title {
-        font-size: getSize('medium');
-    }
-
-    .questions__description {
-        font-size: getSize('little');
-        margin-bottom: 24px;
-    }
-
-    .questions__input {
-        font-size: getSize('small');
-        &:not(:last-of-type) {
-            margin-bottom: 12px;
-        }
-    }
-
-    .questions__form > button {
-        margin-top: 24px;
-    }
-}
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-    .questions {
-
+        
         @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -120,32 +64,37 @@
     }  
     
     .questions__wrapper {
-        width: 311px;
+        width: 335px;
+        max-width: 380px;
+        padding: 28px 20px;
     }
     
     .questions__title {
-        width: 159px;
-        margin: 28px auto 20px auto;
-    }
-
-    .questions__title-brake {
-        display: block;
+        font-size: getSize('medium');
     }
 
     .questions__description {
         width: 243px;
+        font-size: getSize('little');
+        margin: 20px auto 24px auto;
     }
- 
+
     .questions__input {
-        width: 271px;
+        font-size: getSize('small');
+        &:not(:last-of-type) {
+            margin-bottom: 12px;
+        }
+    }
+
+    .questions__form > button {
+        margin-top: 24px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
     .questions {
         padding: 88px 0;
-        width: 768px;
-        height: 688px;
+        width: 100%;
         background-image: url(../images/questions/questyons-bg-tablet-1x.jpg); 
 
         @media screen and (min-device-pixel-ratio: 2),
@@ -171,24 +120,18 @@
     } 
 
     .questions__wrapper {
+        padding: 40px 42px;
         width: 478px;
-        height: 512px;
     }
 
     .questions__title {
-        width: 247px;
-        margin: 40px auto 24px auto;
         font-size: getSize('more-lage');
-    }
-
-    .questions__title-brake {
-        display: block;
     }
 
     .questions__description {
         font-size: getSize('little-small');
         width: 374px;
-        margin-bottom: 32px;
+        margin: 24px auto 32px auto;
     }
 
     .questions__input {
@@ -207,8 +150,7 @@
 @media screen and (min-width: 1440px) {
     .questions {
         padding: 244px 0;
-        width: 1440px;
-        height: 1074px;
+        width: 100%;
         background-image: url(../images/questions/questyons-bg-desk-1x.jpg);
 
         @media screen and (min-device-pixel-ratio: 2),
@@ -234,24 +176,22 @@
     } 
 
     .questions__wrapper {
+        padding: 60px 100px;
         width: 774px;
-        height: 583px;
     }
 
     .questions__title {
-        width: 681px;
-        margin: 60px auto 32px auto;
         font-size: getSize('big-size');
     }
 
     .questions__description {
         font-size: getSize('medium');
         width: 502px;
-        margin-bottom: 44px;
+        margin: 32px auto 44px auto;
     }
 
     .questions__input {
-        width: 575px;
+        
         font-size: getSize('large');
         &:not(:last-of-type) {
             margin-bottom: 20px;
