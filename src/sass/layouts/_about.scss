@@ -1,31 +1,31 @@
 .about__description-separite {
-    display: inline-block;
+    display: block;
     margin-bottom: 10px;
 }
 
 .about__description {
-    margin: 0 auto;
     color: getColor('black-secondary');
     font-size: 16px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
     .about__description {
-        width: 311px;
         font-size: getSize('small');
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
     .about__description {
-        width: 728px;
         font-size: getSize('medium');
     }
 }
 
 @media screen and (min-width: 1440px) {
+    .about {
+        width: 1210px;
+    }
+
     .about__description {
-        width: 1170px;
         font-size: getSize('large');
     }
 }
