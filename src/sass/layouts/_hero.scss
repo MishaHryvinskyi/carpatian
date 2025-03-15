@@ -109,6 +109,7 @@
     }
 
     .hero__description {
+        margin: 0 auto;
         margin-bottom: 60px;
     }
 }
@@ -160,7 +161,7 @@
     }
 
     .hero-wrapper {
-        margin: 0 375px 0 674px;
+        margin: 0 0 0 270px;
         display: flex;
         justify-content: space-between;
         width: 900px;
