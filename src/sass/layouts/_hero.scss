@@ -150,11 +150,6 @@
         font-size: getSize('large-f');
     }
 
-    .hero-wrapper {
-        display: flex;
-        width: 100%;
-    }
-
     .hero-social.social-link {
         flex-direction: column;
         align-items: center;
@@ -162,5 +157,12 @@
         &.social-link .social-link__item:not(:last-child) {
             margin: 0 0 32px 0;
         }
+    }
+
+    .hero-wrapper {
+        margin: 0 375px 0 674px;
+        display: flex;
+        justify-content: space-between;
+        width: 900px;
     }
 }
