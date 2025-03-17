@@ -1,11 +1,34 @@
 .questions {
     margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 116px 0;
+    width: 100%;
+    background: url(../images/questions/questyons-bg-mobile-1x.jpg) center / cover no-repeat;
+    
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/questions/questyons-bg-mobile-2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/questions/questyons-bg-mobile-3x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        background-image: url(../images/questions/questyons-bg-mobile-4x.jpg);
+    }
 }
 
 .questions__wrapper {
+    max-width: 380px;
+    padding: 28px 20px;
     margin: 0 auto;
     background-color: getColor('primary');
 }
@@ -13,18 +36,22 @@
 .questions__title {
     color: getColor('black');
     text-align: center;
+    font-size: getSize('medium');
     font-weight: 500;
     line-height: normal;
 }
 
 .questions__description {
-    margin: 0 auto;
+    margin: 20px auto 24px auto;
+    width: 243px;
+    font-size: getSize('little');
     text-align: center;
 }
 
 .questions__form {
     & > button {
         width: 100%;
+        margin-top: 24px;
     }
     .questions__input {
         width: 100%;
@@ -35,58 +62,10 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-    .questions {
-        padding: 116px 0;
-        width: 100%;
-        background-image: url(../images/questions/questyons-bg-mobile-1x.jpg);
-        
-        @media screen and (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: url(../images/questions/questyons-bg-mobile-2x.jpg);
-        }
-
-        @media screen and (min-device-pixel-ratio: 3),
-        (-webkit-min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
-            background-image: url(../images/questions/questyons-bg-mobile-3x.jpg);
-        }
-
-        @media screen and (min-device-pixel-ratio: 4),
-        (-webkit-min-device-pixel-ratio: 4),
-        screen and (min-resolution: 384dpi),
-        screen and (min-resolution: 4dppx) {
-            background-image: url(../images/questions/questyons-bg-mobile-4x.jpg);
-        }
-    }  
-    
-    .questions__wrapper {
-        max-width: 380px;
-        padding: 28px 20px;
-    }
-    
-    .questions__title {
-        font-size: getSize('medium');
-    }
-
-    .questions__description {
-        width: 243px;
-        font-size: getSize('little');
-        margin: 20px auto 24px auto;
-    }
-
-    .questions__input {
-        font-size: getSize('small');
-        &:not(:last-of-type) {
-            margin-bottom: 12px;
-        }
-    }
-
-    .questions__form > button {
-        margin-top: 24px;
+.questions__input {
+    font-size: getSize('small');
+    &:not(:last-of-type) {
+        margin-bottom: 12px;
     }
 }
 
@@ -120,7 +99,7 @@
 
     .questions__wrapper {
         padding: 40px 42px;
-        width: 478px;
+        max-width: 478px;
     }
 
     .questions__title {
@@ -176,7 +155,7 @@
 
     .questions__wrapper {
         padding: 60px 100px;
-        width: 774px;
+        max-width: 774px;
     }
 
     .questions__title {
@@ -190,7 +169,6 @@
     }
 
     .questions__input {
-        
         font-size: getSize('large');
         &:not(:last-of-type) {
             margin-bottom: 20px;
