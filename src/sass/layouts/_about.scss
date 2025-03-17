@@ -5,13 +5,7 @@
 
 .about__description {
     color: getColor('black-secondary');
-    font-size: 16px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-    .about__description {
-        font-size: getSize('small');
-    }
+    font-size: getSize('small');
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
