@@ -1,8 +1,7 @@
 .upcoming-backdrop {
     position: fixed;
     top: 0;
-    width: 100%;
-    height: 100%;
+    @include size(100%);
 
     background-color: rgba(32, 35, 33, 0.60);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
@@ -60,8 +59,7 @@
 }
 
 .modalSwiper .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
+    @include size(12px);
     background-color: getColor('input-border-color');
     opacity: 0.6;
 }
@@ -92,8 +90,7 @@
 .upcoming-btn-close {
     cursor: pointer;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    @include size(40px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,8 +99,7 @@
     z-index: 130;
 
     & > svg {
-        width: 30px;
-        height: 30px;
+        @include size(30px);
         fill: getColor('primary');
         transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 

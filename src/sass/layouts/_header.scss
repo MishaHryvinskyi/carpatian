@@ -31,14 +31,12 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    @include size(40px);
     background-color: inherit;
     border: none;
 
     & > svg {
-        width: 30px;
-        height: 30px;
+        @include size(30px);
         fill: getColor('primary');
     }
 }

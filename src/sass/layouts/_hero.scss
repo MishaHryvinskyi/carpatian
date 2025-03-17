@@ -6,7 +6,7 @@
     height: 788px;
     color: getColor('primary');
     text-align: center;
-    background: getColor('black-secondary') url('../images/hero/hero-bg-mobile-1x.jpg')center / cover no-repeat;
+    background: getColor('black-secondary') url('../images/hero/hero-bg-mobile-1x.jpg') center / cover no-repeat;
 
     @media screen and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -38,7 +38,7 @@
 
 .hero__description {
     margin: 0 auto 88px auto;
-    font-size: getSize('small');
+    font-size: 14px;
     font-weight: 500;
 }
 
