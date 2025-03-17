@@ -1,10 +1,42 @@
 .advantages__list {
     margin: 0 auto;
+    padding: 87px 0;
     color: getColor('primary');
+    background-image: url(../images/our-advantages/advantages-mobile-1x.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: getSize('little');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/our-advantages/advantages-mobile-2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/our-advantages/advantages-mobile-3x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        background-image: url(../images/our-advantages/advantages-mobile-4x.jpg);
+    }
+
+    & .advantages__item:not(:last-child) {
+        margin-bottom: 28px;
+    }
 }
 
 .advantages__item {
     margin: 0 auto;
+    width: 100%;
+    padding: 11px 0;
     background-color: getColor('accent');
 }
 
@@ -16,55 +48,12 @@
 .description-star::before {
     content: "";
     display: block;
+    margin: 0 8px 0 30px;
+    width: 24px;
+    height: 24px;
     background-image: url(../images/reviews/star.png);
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-    .advantages__list {
-        padding: 87px 0;
-        background-image: url(../images/our-advantages/advantages-mobile-1x.jpg);
-        background-position: center;
-        background-size: cover;
-        font-size: getSize('little');
-
-        @media screen and (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: url(../images/our-advantages/advantages-mobile-2x.jpg);
-        }
-
-        @media screen and (min-device-pixel-ratio: 3),
-        (-webkit-min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
-            background-image: url(../images/our-advantages/advantages-mobile-3x.jpg);
-        }
-
-        @media screen and (min-device-pixel-ratio: 4),
-        (-webkit-min-device-pixel-ratio: 4),
-        screen and (min-resolution: 384dpi),
-        screen and (min-resolution: 4dppx) {
-            background-image: url(../images/our-advantages/advantages-mobile-4x.jpg);
-        }
-
-        & .advantages__item:not(:last-child) {
-            margin-bottom: 28px;
-        }
-    }
-
-    .advantages__item {
-        width: 100%;
-        padding: 11px 0;
-    }
-
-    .description-star::before {
-        margin: 0 8px 0 30px;
-        width: 24px;
-        height: 24px;
-    }
 }
 
 @media screen and (min-width: 768px) {
