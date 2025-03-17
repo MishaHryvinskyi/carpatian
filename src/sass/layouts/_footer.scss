@@ -1,11 +1,16 @@
 .footer {
+    padding: 40px 0;
     margin: 0 auto;
-    font-weight: 400;
     color: getColor('primary');
     background-color: getColor('black-secondary');
+    font-size: getSize('small');
+    font-weight: 400;
 }
 
 .footer__title {
+    margin-bottom: 34px;
+    text-align: center;
+    font-size: getSize('large-f');
     font-weight: 400;
 }
 
@@ -18,76 +23,59 @@
     }
 }
 
+.footer__list {
+    margin-bottom: 20px;
+
+    & .footer__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
 .footer__rights {
+    margin-top: 40px;
     color: getColor('input-border-color');
     font-size: getSize('small');
     text-align: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-    .footer {
-        padding: 40px 44px;
-        font-size: getSize('small');
-    }
-
-    .footer__title {
-        text-align: center;
-        font-size: getSize('large-f');
-        margin-bottom: 34px;
-    }
-
-    .footer__list {
-        margin-bottom: 20px;
-    }
-
-    .footer__list .footer__item:not(:last-child) {
-        margin-bottom: 32px;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 1439px) {
-    .footer__rights {
-        margin-top: 40px;
-    }
-}
-
 @media screen and (min-width: 768px) {
-    .footer-address {
-        justify-content: center;
-        display: flex;
+    .footer {
+        padding: 60px 0;
     }
 
-    .footer__list .footer__item:not(:last-child) {
-        margin-bottom: 40px;
+    .footer-address {
+        display: flex;
+        justify-content: center;
     }
 
     .footer__list {
         margin-bottom: 40px;
+
+        & .footer__item:not(:last-child) {
+            margin-bottom: 40px;
+        }
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
     .footer {
-        padding: 64px 0 64px 0px ;
         font-size: getSize('little-small');
     }
 
     .footer__title {
         font-size: getSize('more-lage');
-        margin-right: 137px;
+        margin: 0 137px 0 0;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .footer {
-        margin: 0 auto;
-        padding: 60px 0 ;
         font-size: getSize('large');
     }
 
     .footer__title {
         font-size: getSize('more-big');
-        margin-right: 128px;
+        margin: 0 128px 0 0;
     }
 
     .footer__rights {
