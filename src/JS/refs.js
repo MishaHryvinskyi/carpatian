@@ -13,4 +13,5 @@ export const refs = {
     mobileMeny: document.querySelector('.mobile-menu'),
     disabledBtn: document.querySelector('.primari-btn'),
     logo: document.querySelector('.logo'),
+    btnMenu: document.querySelector('.menu-js'),
 };

@@ -43,7 +43,21 @@
     }
 }
 
+.menu__icon-open {
+    display: block;
+}
 
+.menu__icon-close {
+    display: none;
+}
+
+.menu.toggle .menu__icon-close {
+    display: block;
+}
+
+.menu.toggle .menu__icon-open {
+    display: none;
+}
 
 .mobile-menu {
     transition: transform 0.3s ease-in-out;

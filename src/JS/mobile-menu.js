@@ -1,5 +1,5 @@
 import { refs } from "./refs";
-const { heroDescr, heroTitle, mobileMeny, disabledBtn, logo } = refs;
+const { heroDescr, heroTitle, mobileMeny, disabledBtn, logo, btnMenu } = refs;
 
 export function menuOpen() {
     const screenWidth = window.innerWidth;
@@ -9,6 +9,7 @@ export function menuOpen() {
         return;
     }
 
+    btnMenu.classList.toggle('toggle');
     mobileMeny.classList.toggle('open');
     updateMenuState();
 }
@@ -35,9 +36,14 @@ export function updateMenuState() {
 }
 
 export function closeMenu() {
+    btnMenu.classList.remove('toggle');
     mobileMeny.classList.remove('open');
     logo.style.marginLeft = '0';
     disabledBtn.classList.remove('btn-disabled');
     heroTitle.classList.remove('btn-disabled');
     heroDescr.classList.remove('btn-disabled');
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    closeMenu();
+});
