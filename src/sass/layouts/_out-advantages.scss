@@ -7,24 +7,15 @@
     background-size: cover;
     font-size: getSize('little');
 
-    @media screen and (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+    @include retina(2) {
         background-image: url(../images/our-advantages/advantages-mobile-2x.jpg);
     }
 
-    @media screen and (min-device-pixel-ratio: 3),
-    (-webkit-min-device-pixel-ratio: 3),
-    screen and (min-resolution: 288dpi),
-    screen and (min-resolution: 3dppx) {
+    @include retina(3) {
         background-image: url(../images/our-advantages/advantages-mobile-3x.jpg);
     }
 
-    @media screen and (min-device-pixel-ratio: 4),
-    (-webkit-min-device-pixel-ratio: 4),
-    screen and (min-resolution: 384dpi),
-    screen and (min-resolution: 4dppx) {
+    @include retina(4) {
         background-image: url(../images/our-advantages/advantages-mobile-4x.jpg);
     }
 

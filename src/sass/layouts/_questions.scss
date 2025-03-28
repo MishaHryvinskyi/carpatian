@@ -4,24 +4,15 @@
     width: 100%;
     background: url(../images/questions/questyons-bg-mobile-1x.jpg) center / cover no-repeat;
     
-    @media screen and (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+    @include retina(2) {
         background-image: url(../images/questions/questyons-bg-mobile-2x.jpg);
     }
 
-    @media screen and (min-device-pixel-ratio: 3),
-    (-webkit-min-device-pixel-ratio: 3),
-    screen and (min-resolution: 288dpi),
-    screen and (min-resolution: 3dppx) {
+    @include retina(3) {
         background-image: url(../images/questions/questyons-bg-mobile-3x.jpg);
     }
 
-    @media screen and (min-device-pixel-ratio: 4),
-    (-webkit-min-device-pixel-ratio: 4),
-    screen and (min-resolution: 384dpi),
-    screen and (min-resolution: 4dppx) {
+    @include retina(4) {
         background-image: url(../images/questions/questyons-bg-mobile-4x.jpg);
     }
 }
@@ -75,24 +66,15 @@
         width: 100%;
         background-image: url(../images/questions/questyons-bg-tablet-1x.jpg); 
 
-        @media screen and (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+        @include retina(2) {
             background-image: url(../images/questions/questyons-bg-tablet-2x.jpg);
         }
-
-        @media screen and (min-device-pixel-ratio: 3),
-        (-webkit-min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
+    
+        @include retina(3) {
             background-image: url(../images/questions/questyons-bg-tablet-3x.jpg);
         }
-
-        @media screen and (min-device-pixel-ratio: 4),
-        (-webkit-min-device-pixel-ratio: 4),
-        screen and (min-resolution: 384dpi),
-        screen and (min-resolution: 4dppx) {
+    
+        @include retina(4) {
             background-image: url(../images/questions/questyons-bg-tablet-4x.jpg);
         }
     } 
@@ -131,24 +113,15 @@
         width: 100%;
         background-image: url(../images/questions/questyons-bg-desk-1x.jpg);
 
-        @media screen and (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+        @include retina(2) {
             background-image: url(../images/questions/questyons-bg-desk-2x.jpg);
         }
-
-        @media screen and (min-device-pixel-ratio: 3),
-        (-webkit-min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
+    
+        @include retina(3) {
             background-image: url(../images/questions/questyons-bg-desk-3x.jpg);
         }
-
-        @media screen and (min-device-pixel-ratio: 4),
-        (-webkit-min-device-pixel-ratio: 4),
-        screen and (min-resolution: 384dpi),
-        screen and (min-resolution: 4dppx) {
+    
+        @include retina(4) {
             background-image: url(../images/questions/questyons-bg-desk-4x.jpg);
         }
     } 
