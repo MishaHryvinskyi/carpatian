@@ -2,7 +2,7 @@ export function markupHoverla () {
     return  `
     <div class="swiper modalSwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide hoverla-modal day-1">
+            <div class="swiper-slide hoverla-modal hoverla-day-1">
                 <h3 class="upcoming-modal__title">Ascent to Hoverla</h3>
                 <p class="upcoming-modal__day">1 day</p>
                 <ul class="upcoming-modal__list">
@@ -15,7 +15,7 @@ export function markupHoverla () {
                     <li class="upcoming-modal__item">Evening by the fireplace</li>
                 </ul>
             </div>
-            <div class="swiper-slide hoverla-modal day-2">
+            <div class="swiper-slide hoverla-modal hoverla-day-2">
                 <h3 class="upcoming-modal__title">Ascent to Hoverla</h3>
                 <p class="upcoming-modal__day">2 day</p>
                 <ul class="upcoming-modal__list">
@@ -27,7 +27,7 @@ export function markupHoverla () {
                     <li class="upcoming-modal__item">Dinner</li>
                 </ul>
             </div>
-                <div class="swiper-slide hoverla-modal day-3">
+                <div class="swiper-slide hoverla-modal hoverla-day-3">
                     <h3 class="upcoming-modal__title">Ascent to Hoverla</h3>
                     <p class="upcoming-modal__day">3 day</p>
                     <ul class="upcoming-modal__list">
@@ -52,7 +52,7 @@ export function markupBukovel () {
     return  `
     <div class="swiper modalSwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide hoverla-modal bukovel-1">
+            <div class="swiper-slide hoverla-modal bukovel-day-1">
                 <h3 class="upcoming-modal__title">Ski tour to Bukovel</h3>
                 <p class="upcoming-modal__day">1 day</p>
                 <ul class="upcoming-modal__list">
@@ -65,7 +65,7 @@ export function markupBukovel () {
                     <li class="upcoming-modal__item">Evening by the fireplace</li>
                 </ul>
             </div>
-                 <div class="swiper-slide hoverla-modal bukovel-2">
+                 <div class="swiper-slide hoverla-modal bukovel-day-2">
                 <h3 class="upcoming-modal__title">Ski tour to Bukovel</h3>
                 <p class="upcoming-modal__day">2 day</p>
                 <ul class="upcoming-modal__list">
@@ -77,7 +77,7 @@ export function markupBukovel () {
                     <li class="upcoming-modal__item">Vacation</li>
                 </ul>
             </div>
-            <div class="swiper-slide hoverla-modal bukovel-3">
+            <div class="swiper-slide hoverla-modal bukovel-day-3">
                 <h3 class="upcoming-modal__title">Ski tour to Bukovel</h3>
                 <p class="upcoming-modal__day">3 day</p>
                 <ul class="upcoming-modal__list">
@@ -89,7 +89,7 @@ export function markupBukovel () {
                     <li class="upcoming-modal__item">Dinner</li>
                 </ul>
             </div>
-            <div class="swiper-slide hoverla-modal bukovel-4">
+            <div class="swiper-slide hoverla-modal bukovel-day-4">
                 <h3 class="upcoming-modal__title">Ski tour to Bukovel</h3>
                 <p class="upcoming-modal__day">4 day</p>
                 <ul class="upcoming-modal__list">
@@ -114,7 +114,7 @@ export function markupCarpatians () {
     return  `
     <div class="swiper modalSwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide hoverla-modal carpatians-1">
+            <div class="swiper-slide hoverla-modal carpatian-day-1">
                 <h3 class="upcoming-modal__title">Week in Carpathians</h3>
                 <p class="upcoming-modal__day">1 day</p>
                 <ul class="upcoming-modal__list">
@@ -126,7 +126,7 @@ export function markupCarpatians () {
                     <li class="upcoming-modal__item">Dinner</li>
                 </ul>
             </div>
-                 <div class="swiper-slide hoverla-modal carpatians-2">
+                 <div class="swiper-slide hoverla-modal carpatian-day-2">
                 <h3 class="upcoming-modal__title">Week in Carpathians</h3>
                 <p class="upcoming-modal__day">2 day</p>
                 <ul class="upcoming-modal__list">
@@ -138,7 +138,7 @@ export function markupCarpatians () {
                     <li class="upcoming-modal__item">Dinner</li>
                 </ul>
             </div>
-            <div class="swiper-slide hoverla-modal carpatians-3">
+            <div class="swiper-slide hoverla-modal carpatian-day-3">
                 <h3 class="upcoming-modal__title">Week in Carpathians</h3>
                 <p class="upcoming-modal__day">3 day</p>
                 <ul class="upcoming-modal__list">
@@ -149,7 +149,7 @@ export function markupCarpatians () {
                     <li class="upcoming-modal__item">Dinner</li>
                 </ul>
             </div>
-            <div class="swiper-slide hoverla-modal carpatians-4">
+            <div class="swiper-slide hoverla-modal carpatian-day-4">
                 <h3 class="upcoming-modal__title">Week in Carpathians</h3>
                 <p class="upcoming-modal__day">4 day</p>
                 <ul class="upcoming-modal__list">
@@ -160,7 +160,7 @@ export function markupCarpatians () {
                     <li class="upcoming-modal__item">Dinner</li>
                 </ul>
             </div>
-            <div class="swiper-slide hoverla-modal carpatians-5">
+            <div class="swiper-slide hoverla-modal carpatian-day-5">
                 <h3 class="upcoming-modal__title">Week in Carpathians</h3>
                 <p class="upcoming-modal__day">5 day</p>
                 <ul class="upcoming-modal__list">
@@ -170,7 +170,7 @@ export function markupCarpatians () {
                     <li class="upcoming-modal__item">Dinner</li>
                 </ul>
             </div>
-            <div class="swiper-slide hoverla-modal carpatians-6">
+            <div class="swiper-slide hoverla-modal carpatian-day-6">
                 <h3 class="upcoming-modal__title">Week in Carpathians</h3>
                 <p class="upcoming-modal__day">6 day</p>
                 <ul class="upcoming-modal__list">
@@ -181,7 +181,7 @@ export function markupCarpatians () {
                     <li class="upcoming-modal__item">Dinner</li>
                 </ul>
             </div>
-            <div class="swiper-slide hoverla-modal carpatians-7">
+            <div class="swiper-slide hoverla-modal carpatian-day-7">
                 <h3 class="upcoming-modal__title">Week in Carpathians</h3>
                 <p class="upcoming-modal__day">7 day</p>
                 <ul class="upcoming-modal__list">

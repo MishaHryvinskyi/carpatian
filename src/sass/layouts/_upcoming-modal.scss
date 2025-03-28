@@ -65,24 +65,6 @@
     opacity: 1;
 }
 
-.day-1,
-.day-2,
-.day-3,
-.bukovel-1,
-.bukovel-2,
-.bukovel-3,
-.bukovel-4,
-.carpatians-1,
-.carpatians-2,
-.carpatians-3,
-.carpatians-4,
-.carpatians-5,
-.carpatians-6,
-.carpatians-7 {
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 .upcoming-btn-close {
     cursor: pointer;
     position: absolute;
@@ -106,8 +88,7 @@
     }
 }
 
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
    .upcoming-modal {
         @include size(315px, $height: 624px);
    } 
@@ -153,95 +134,24 @@
         }
     }
     
-    .day-1 {
-        background-image: url(../images/upcoming-modal/hoverla-day-1-mobile-1x.jpg);
-    }
-    .day-2 {
-        background-image: url(../images/upcoming-modal/hoverla-day-2-mobile-1x.jpg);
-    }
-    .day-3 {
-        background-image: url(../images/upcoming-modal/hoverla-day-3-mobile-1x.jpg);
-    }
-
-    .bukovel-1 {
-        background-image: url(../images/upcoming-modal/bukovel-day-1-mobile-1x.jpg);
-    }
-    .bukovel-2 {
-        background-image: url(../images/upcoming-modal/bukovel-day-2-mobile-1x.jpg);
-    }
-    .bukovel-3 {
-        background-image: url(../images/upcoming-modal/bukovel-day-3-mobile-1x.jpg);
-    }
-    .bukovel-4 {
-        background-image: url(../images/upcoming-modal/bukovel-day-4-mobile-1x.jpg);
-    }
-    .carpatians-1 {
-        background-image: url(../images/upcoming-modal/carpatian-day-1-mobile-1x.jpg);
-    }
-    .carpatians-2 {
-        background-image: url(../images/upcoming-modal/carpatian-day-2-mobile-1x.jpg);
-    }
-    .carpatians-3 {
-        background-image: url(../images/upcoming-modal/carpatian-day-3-mobile-1x.jpg);
-    }
-    .carpatians-4 {
-        background-image: url(../images/upcoming-modal/carpatian-day-4-mobile-1x.jpg);
-    }
-    .carpatians-5 {
-        background-image: url(../images/upcoming-modal/carpatian-day-5-mobile-1x.jpg);
-    }
-    .carpatians-6 {
-        background-image: url(../images/upcoming-modal/carpatian-day-6-mobile-1x.jpg);
-    }
-    .carpatians-7 {
-        background-image: url(../images/upcoming-modal/carpatian-day-7-mobile-1x.jpg);
+    @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+    bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+    carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+        .#{$item} {
+          background: url('../images/upcoming-modal/#{$item}-mobile-1x.jpg') no-repeat center / contain;
+        }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-           .day-1 {
-                background-image: url(../images/upcoming-modal/hoverla-day-1-mobile-2x.jpg);
-            }
-            .day-2 {
-                background-image: url(../images/upcoming-modal/hoverla-day-2-mobile-2x.jpg);
-            }
-            .day-3 {
-                background-image: url(../images/upcoming-modal/hoverla-day-3-mobile-2x.jpg);
-            }
-            .bukovel-1 {
-                background-image: url(../images/upcoming-modal/bukovel-day-1-mobile-2x.jpg);
-            }
-            .bukovel-2 {
-                background-image: url(../images/upcoming-modal/bukovel-day-2-mobile-2x.jpg);
-            }
-            .bukovel-3 {
-                background-image: url(../images/upcoming-modal/bukovel-day-3-mobile-2x.jpg);
-            }
-            .bukovel-4 {
-                background-image: url(../images/upcoming-modal/bukovel-day-4-mobile-2x.jpg);
-            }
-            .carpatians-1 {
-                background-image: url(../images/upcoming-modal/carpatian-day-1-mobile-2x.jpg);
-            }
-            .carpatians-2 {
-                background-image: url(../images/upcoming-modal/carpatian-day-2-mobile-2x.jpg);
-            }
-            .carpatians-3 {
-                background-image: url(../images/upcoming-modal/carpatian-day-3-mobile-2x.jpg);
-            }
-            .carpatians-4 {
-                background-image: url(../images/upcoming-modal/carpatian-day-4-mobile-2x.jpg);
-            }
-            .carpatians-5 {
-                background-image: url(../images/upcoming-modal/carpatian-day-5-mobile-2x.jpg);
-            }
-            .carpatians-6 {
-                background-image: url(../images/upcoming-modal/carpatian-day-6-mobile-2x.jpg);
-            }
-            .carpatians-7 {
-                background-image: url(../images/upcoming-modal/carpatian-day-7-mobile-2x.jpg);
+            @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+            bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+            carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+                .#{$item} {
+                  background: url('../images/upcoming-modal/#{$item}-mobile-2x.jpg') no-repeat center / contain;
+                }
             }
         }
 
@@ -249,47 +159,12 @@
         (-webkit-min-device-pixel-ratio: 3),
         screen and (min-resolution: 288dpi),
         screen and (min-resolution: 3dppx) {
-           .day-1 {
-                background-image: url(../images/upcoming-modal/hoverla-day-1-mobile-3x.jpg);
-            }
-            .day-2 {
-                background-image: url(../images/upcoming-modal/hoverla-day-2-mobile-3x.jpg);
-            }
-            .day-3 {
-                background-image: url(../images/upcoming-modal/hoverla-day-3-mobile-3x.jpg);
-            }
-            .bukovel-1 {
-                background-image: url(../images/upcoming-modal/bukovel-day-1-mobile-3x.jpg);
-            }
-            .bukovel-2 {
-                background-image: url(../images/upcoming-modal/bukovel-day-2-mobile-3x.jpg);
-            }
-            .bukovel-3 {
-                background-image: url(../images/upcoming-modal/bukovel-day-3-mobile-3x.jpg);
-            }
-            .bukovel-4 {
-                background-image: url(../images/upcoming-modal/bukovel-day-4-mobile-3x.jpg);
-            }
-            .carpatians-1 {
-                background-image: url(../images/upcoming-modal/carpatian-day-1-mobile-3x.jpg);
-            }
-            .carpatians-2 {
-                background-image: url(../images/upcoming-modal/carpatian-day-2-mobile-3x.jpg);
-            }
-            .carpatians-3 {
-                background-image: url(../images/upcoming-modal/carpatian-day-3-mobile-3x.jpg);
-            }
-            .carpatians-4 {
-                background-image: url(../images/upcoming-modal/carpatian-day-4-mobile-3x.jpg);
-            }
-            .carpatians-5 {
-                background-image: url(../images/upcoming-modal/carpatian-day-5-mobile-3x.jpg);
-            }
-            .carpatians-6 {
-                background-image: url(../images/upcoming-modal/carpatian-day-6-mobile-3x.jpg);
-            }
-            .carpatians-7 {
-                background-image: url(../images/upcoming-modal/carpatian-day-7-mobile-3x.jpg);
+            @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+            bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+            carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+                .#{$item} {
+                  background: url('../images/upcoming-modal/#{$item}-mobile-3x.jpg') no-repeat center / contain;
+                }
             }
         }
 
@@ -297,47 +172,12 @@
         (-webkit-min-device-pixel-ratio: 4),
         screen and (min-resolution: 384dpi),
         screen and (min-resolution: 4dppx) {
-           .day-1 {
-                background-image: url(../images/upcoming-modal/hoverla-day-1-mobile-4x.jpg);
-            }
-            .day-2 {
-                background-image: url(../images/upcoming-modal/hoverla-day-2-mobile-4x.jpg);
-            }
-            .day-3 {
-                background-image: url(../images/upcoming-modal/hoverla-day-3-mobile-4x.jpg);
-            }
-            .bukovel-1 {
-                background-image: url(../images/upcoming-modal/bukovel-day-1-mobile-4x.jpg);
-            }
-            .bukovel-2 {
-                background-image: url(../images/upcoming-modal/bukovel-day-2-mobile-4x.jpg);
-            }
-            .bukovel-3 {
-                background-image: url(../images/upcoming-modal/bukovel-day-3-mobile-4x.jpg);
-            }
-            .bukovel-4 {
-                background-image: url(../images/upcoming-modal/bukovel-day-4-mobile-4x.jpg);
-            }
-            .carpatians-1 {
-                background-image: url(../images/upcoming-modal/carpatian-day-1-mobile-4x.jpg);
-            }
-            .carpatians-2 {
-                background-image: url(../images/upcoming-modal/carpatian-day-2-mobile-4x.jpg);
-            }
-            .carpatians-3 {
-                background-image: url(../images/upcoming-modal/carpatian-day-3-mobile-4x.jpg);
-            }
-            .carpatians-4 {
-                background-image: url(../images/upcoming-modal/carpatian-day-4-mobile-4x.jpg);
-            }
-            .carpatians-5 {
-                background-image: url(../images/upcoming-modal/carpatian-day-5-mobile-4x.jpg);
-            }
-            .carpatians-6 {
-                background-image: url(../images/upcoming-modal/carpatian-day-6-mobile-4x.jpg);
-            }
-            .carpatians-7 {
-                background-image: url(../images/upcoming-modal/carpatian-day-7-mobile-4x.jpg);
+            @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+            bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+            carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+                .#{$item} {
+                  background: url('../images/upcoming-modal/#{$item}-mobile-4x.jpg') no-repeat center / contain;
+                }
             }
         }
 
@@ -385,192 +225,52 @@
         padding: 12px 253px 12px 60px;
     }
     
-    .day-1 {
-        background-image: url(../images/upcoming-modal/hoverla-day-1-tablet-1x.jpg);
-    }
-    .day-2 {
-        background-image: url(../images/upcoming-modal/hoverla-day-2-tablet-1x.jpg);
-    }
-    .day-3 {
-        background-image: url(../images/upcoming-modal/hoverla-day-3-tablet-1x.jpg);
-    }
-    .bukovel-1 {
-        background-image: url(../images/upcoming-modal/bukovel-day-1-tablet-1x.jpg);
-    }
-    .bukovel-2 {
-        background-image: url(../images/upcoming-modal/bukovel-day-2-tablet-1x.jpg);
-    }
-    .bukovel-3 {
-        background-image: url(../images/upcoming-modal/bukovel-day-3-tablet-1x.jpg);
-    }
-    .bukovel-4 {
-        background-image: url(../images/upcoming-modal/bukovel-day-4-tablet-1x.jpg);
-    }
-    .carpatians-1 {
-        background-image: url(../images/upcoming-modal/carpatian-day-1-tablet-1x.jpg);
-    }
-    .carpatians-2 {
-        background-image: url(../images/upcoming-modal/carpatian-day-2-tablet-1x.jpg);
-    }
-    .carpatians-3 {
-        background-image: url(../images/upcoming-modal/carpatian-day-3-tablet-1x.jpg);
-    }
-    .carpatians-4 {
-        background-image: url(../images/upcoming-modal/carpatian-day-4-tablet-1x.jpg);
-    }
-    .carpatians-5 {
-        background-image: url(../images/upcoming-modal/carpatian-day-5-tablet-1x.jpg);
-    }
-    .carpatians-6 {
-        background-image: url(../images/upcoming-modal/carpatian-day-6-tablet-1x.jpg);
-    }
-    .carpatians-7 {
-        background-image: url(../images/upcoming-modal/carpatian-day-7-tablet-1x.jpg);
+    @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+    bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+    carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+        .#{$item} {
+          background: url('../images/upcoming-modal/#{$item}-tablet-1x.jpg') no-repeat center / contain;
+        }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-           .day-1 {
-                background-image: url(../images/upcoming-modal/hoverla-day-1-tablet-2x.jpg);
+            @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+            bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+            carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+                .#{$item} {
+                  background: url('../images/upcoming-modal/#{$item}-tablet-2x.jpg') no-repeat center / contain;
+                }
             }
-            .day-2 {
-                background-image: url(../images/upcoming-modal/hoverla-day-2-tablet-2x.jpg);
-            }
-            .day-3 {
-                background-image: url(../images/upcoming-modal/hoverla-day-3-tablet-2x.jpg);
-            }
-            .bukovel-1 {
-                background-image: url(../images/upcoming-modal/bukovel-day-1-tablet-2x.jpg);
-            }
-            .bukovel-2 {
-                background-image: url(../images/upcoming-modal/bukovel-day-2-tablet-2x.jpg);
-            }
-            .bukovel-3 {
-                background-image: url(../images/upcoming-modal/bukovel-day-3-tablet-2x.jpg);
-            }
-            .bukovel-4 {
-                background-image: url(../images/upcoming-modal/bukovel-day-4-tablet-2x.jpg);
-            }
-            .carpatians-1 {
-                background-image: url(../images/upcoming-modal/carpatian-day-1-tablet-2x.jpg);
-            }
-            .carpatians-2 {
-                background-image: url(../images/upcoming-modal/carpatian-day-2-tablet-2x.jpg);
-            }
-            .carpatians-3 {
-                background-image: url(../images/upcoming-modal/carpatian-day-3-tablet-2x.jpg);
-            }
-            .carpatians-4 {
-                background-image: url(../images/upcoming-modal/carpatian-day-4-tablet-2x.jpg);
-            }
-            .carpatians-5 {
-                background-image: url(../images/upcoming-modal/carpatian-day-5-tablet-2x.jpg);
-            }
-            .carpatians-6 {
-                background-image: url(../images/upcoming-modal/carpatian-day-6-tablet-2x.jpg);
-            }
-            .carpatians-7 {
-                background-image: url(../images/upcoming-modal/carpatian-day-7-tablet-2x.jpg);
-            }
-        }
+    }
 
-        @media screen and (min-device-pixel-ratio: 3),
-        (-webkit-min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
-           .day-1 {
-                background-image: url(../images/upcoming-modal/hoverla-day-1-tablet-3x.jpg);
-            }
-            .day-2 {
-                background-image: url(../images/upcoming-modal/hoverla-day-2-tablet-3x.jpg);
-            }
-            .day-3 {
-                background-image: url(../images/upcoming-modal/hoverla-day-3-tablet-3x.jpg);
-            }
-            .bukovel-1 {
-                background-image: url(../images/upcoming-modal/bukovel-day-1-tablet-3x.jpg);
-            }
-            .bukovel-2 {
-                background-image: url(../images/upcoming-modal/bukovel-day-2-tablet-3x.jpg);
-            }
-            .bukovel-3 {
-                background-image: url(../images/upcoming-modal/bukovel-day-3-tablet-3x.jpg);
-            }
-            .bukovel-4 {
-                background-image: url(../images/upcoming-modal/bukovel-day-4-tablet-3x.jpg);
-            }
-            .carpatians-1 {
-                background-image: url(../images/upcoming-modal/carpatian-day-1-tablet-3x.jpg);
-            }
-            .carpatians-2 {
-                background-image: url(../images/upcoming-modal/carpatian-day-2-tablet-3x.jpg);
-            }
-            .carpatians-3 {
-                background-image: url(../images/upcoming-modal/carpatian-day-3-tablet-3x.jpg);
-            }
-            .carpatians-4 {
-                background-image: url(../images/upcoming-modal/carpatian-day-4-tablet-3x.jpg);
-            }
-            .carpatians-5 {
-                background-image: url(../images/upcoming-modal/carpatian-day-5-tablet-3x.jpg);
-            }
-            .carpatians-6 {
-                background-image: url(../images/upcoming-modal/carpatian-day-6-tablet-3x.jpg);
-            }
-            .carpatians-7 {
-                background-image: url(../images/upcoming-modal/carpatian-day-7-tablet-3x.jpg);
+    @media screen and (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+        bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+        carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+            .#{$item} {
+              background: url('../images/upcoming-modal/#{$item}-tablet-3x.jpg') no-repeat center / contain;
             }
         }
+    }
 
-        @media screen and (min-device-pixel-ratio: 4),
-        (-webkit-min-device-pixel-ratio: 4),
-        screen and (min-resolution: 384dpi),
-        screen and (min-resolution: 4dppx) {
-           .day-1 {
-                background-image: url(../images/upcoming-modal/hoverla-day-1-tablet-4x.jpg);
-            }
-            .day-2 {
-                background-image: url(../images/upcoming-modal/hoverla-day-2-tablet-4x.jpg);
-            }
-            .day-3 {
-                background-image: url(../images/upcoming-modal/hoverla-day-3-tablet-4x.jpg);
-            }
-            .bukovel-1 {
-                background-image: url(../images/upcoming-modal/bukovel-day-1-tablet-4x.jpg);
-            }
-            .bukovel-2 {
-                background-image: url(../images/upcoming-modal/bukovel-day-2-tablet-4x.jpg);
-            }
-            .bukovel-3 {
-                background-image: url(../images/upcoming-modal/bukovel-day-3-tablet-4x.jpg);
-            }
-            .bukovel-4 {
-                background-image: url(../images/upcoming-modal/bukovel-day-4-tablet-4x.jpg);
-            }
-            .carpatians-1 {
-                background-image: url(../images/upcoming-modal/carpatian-day-1-tablet-4x.jpg);
-            }
-            .carpatians-2 {
-                background-image: url(../images/upcoming-modal/carpatian-day-2-tablet-4x.jpg);
-            }
-            .carpatians-3 {
-                background-image: url(../images/upcoming-modal/carpatian-day-3-tablet-4x.jpg);
-            }
-            .carpatians-4 {
-                background-image: url(../images/upcoming-modal/carpatian-day-4-tablet-4x.jpg);
-            }
-            .carpatians-5 {
-                background-image: url(../images/upcoming-modal/carpatian-day-5-tablet-4x.jpg);
-            }
-            .carpatians-6 {
-                background-image: url(../images/upcoming-modal/carpatian-day-6-tablet-4x.jpg);
-            }
-            .carpatians-7 {
-                background-image: url(../images/upcoming-modal/carpatian-day-7-tablet-4x.jpg);
+    @media screen and (min-device-pixel-ratio: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+        bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+        carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+            .#{$item} {
+              background: url('../images/upcoming-modal/#{$item}-tablet-4x.jpg') no-repeat center / contain;
             }
         }
+    }
 
     .swiper-pagination {
         margin-bottom: 45px;
@@ -626,192 +326,52 @@
         padding: 7px 307px 7px 100px;
     }
     
-    .day-1 {
-        background-image: url(../images/upcoming-modal/hoverla-day-1-desktop-1x.jpg);
+    @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+    bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+    carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+        .#{$item} {
+          background: url('../images/upcoming-modal/#{$item}-desktop-1x.jpg') no-repeat center / contain;
+        }
     }
-    .day-2 {
-        background-image: url(../images/upcoming-modal/hoverla-day-2-desktop-1x.jpg);
-    }
-    .day-3 {
-        background-image: url(../images/upcoming-modal/hoverla-day-3-desktop-1x.jpg);
-    }
-    .bukovel-1 {
-        background-image: url(../images/upcoming-modal/bukovel-day-1-desktop-1x.jpg);
-    }
-    .bukovel-2 {
-        background-image: url(../images/upcoming-modal/bukovel-day-2-desktop-1x.jpg);
-    }
-    .bukovel-3 {
-        background-image: url(../images/upcoming-modal/bukovel-day-3-desktop-1x.jpg);
-    }
-    .bukovel-4 {
-        background-image: url(../images/upcoming-modal/bukovel-day-4-desktop-1x.jpg);
-    }
-    .carpatians-1 {
-        background-image: url(../images/upcoming-modal/carpatian-day-1-desktop-1x.jpg);
-    }
-    .carpatians-2 {
-        background-image: url(../images/upcoming-modal/carpatian-day-2-desktop-1x.jpg);
-    }
-    .carpatians-3 {
-        background-image: url(../images/upcoming-modal/carpatian-day-3-desktop-1x.jpg);
-    }
-    .carpatians-4 {
-        background-image: url(../images/upcoming-modal/carpatian-day-4-desktop-1x.jpg);
-    }
-    .carpatians-5 {
-        background-image: url(../images/upcoming-modal/carpatian-day-5-desktop-1x.jpg);
-    }
-    .carpatians-6 {
-        background-image: url(../images/upcoming-modal/carpatian-day-6-desktop-1x.jpg);
-    }
-    .carpatians-7 {
-        background-image: url(../images/upcoming-modal/carpatian-day-7-desktop-1x.jpg);
-    }
-    
+
     @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-           .day-1 {
-                background-image: url(../images/upcoming-modal/hoverla-day-1-desktop-2x.jpg);
-            }
-            .day-2 {
-                background-image: url(../images/upcoming-modal/hoverla-day-2-desktop-2x.jpg);
-            }
-            .day-3 {
-                background-image: url(../images/upcoming-modal/hoverla-day-3-desktop-2x.jpg);
-            }
-            .bukovel-1 {
-                background-image: url(../images/upcoming-modal/bukovel-day-1-desktop-2x.jpg);
-            }
-            .bukovel-2 {
-                background-image: url(../images/upcoming-modal/bukovel-day-2-desktop-2x.jpg);
-            }
-            .bukovel-3 {
-                background-image: url(../images/upcoming-modal/bukovel-day-3-desktop-2x.jpg);
-            }
-            .bukovel-4 {
-                background-image: url(../images/upcoming-modal/bukovel-day-4-desktop-2x.jpg);
-            }
-            .carpatians-1 {
-                background-image: url(../images/upcoming-modal/carpatian-day-1-desktop-2x.jpg);
-            }
-            .carpatians-2 {
-                background-image: url(../images/upcoming-modal/carpatian-day-2-desktop-2x.jpg);
-            }
-            .carpatians-3 {
-                background-image: url(../images/upcoming-modal/carpatian-day-3-desktop-2x.jpg);
-            }
-            .carpatians-4 {
-                background-image: url(../images/upcoming-modal/carpatian-day-4-desktop-2x.jpg);
-            }
-            .carpatians-5 {
-                background-image: url(../images/upcoming-modal/carpatian-day-5-desktop-2x.jpg);
-            }
-            .carpatians-6 {
-                background-image: url(../images/upcoming-modal/carpatian-day-6-desktop-2x.jpg);
-            }
-            .carpatians-7 {
-                background-image: url(../images/upcoming-modal/carpatian-day-7-desktop-2x.jpg);
-            }
+            @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+            bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+            carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+                .#{$item} {
+                  background: url('../images/upcoming-modal/#{$item}-desktop-2x.jpg') no-repeat center / contain;
+                }
         }
+    }
 
-        @media screen and (min-device-pixel-ratio: 3),
-        (-webkit-min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
-           .day-1 {
-                background-image: url(../images/upcoming-modal/hoverla-day-1-desktop-3x.jpg);
-            }
-            .day-2 {
-                background-image: url(../images/upcoming-modal/hoverla-day-2-desktop-3x.jpg);
-            }
-            .day-3 {
-                background-image: url(../images/upcoming-modal/hoverla-day-3-desktop-3x.jpg);
-            }
-            .bukovel-1 {
-                background-image: url(../images/upcoming-modal/bukovel-day-1-desktop-3x.jpg);
-            }
-            .bukovel-2 {
-                background-image: url(../images/upcoming-modal/bukovel-day-2-desktop-3x.jpg);
-            }
-            .bukovel-3 {
-                background-image: url(../images/upcoming-modal/bukovel-day-3-desktop-3x.jpg);
-            }
-            .bukovel-4 {
-                background-image: url(../images/upcoming-modal/bukovel-day-4-desktop-3x.jpg);
-            }
-            .carpatians-1 {
-                background-image: url(../images/upcoming-modal/carpatian-day-1-desktop-3x.jpg);
-            }
-            .carpatians-2 {
-                background-image: url(../images/upcoming-modal/carpatian-day-2-desktop-3x.jpg);
-            }
-            .carpatians-3 {
-                background-image: url(../images/upcoming-modal/carpatian-day-3-desktop-3x.jpg);
-            }
-            .carpatians-4 {
-                background-image: url(../images/upcoming-modal/carpatian-day-4-desktop-3x.jpg);
-            }
-            .carpatians-5 {
-                background-image: url(../images/upcoming-modal/carpatian-day-5-desktop-3x.jpg);
-            }
-            .carpatians-6 {
-                background-image: url(../images/upcoming-modal/carpatian-day-6-desktop-3x.jpg);
-            }
-            .carpatians-7 {
-                background-image: url(../images/upcoming-modal/carpatian-day-7-desktop-3x.jpg);
+    @media screen and (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+        bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+        carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+            .#{$item} {
+              background: url('../images/upcoming-modal/#{$item}-desktop-3x.jpg') no-repeat center / contain;
             }
         }
+    }
 
-        @media screen and (min-device-pixel-ratio: 4),
-        (-webkit-min-device-pixel-ratio: 4),
-        screen and (min-resolution: 384dpi),
-        screen and (min-resolution: 4dppx) {
-           .day-1 {
-                background-image: url(../images/upcoming-modal/hoverla-day-1-desktop-4x.jpg);
-            }
-            .day-2 {
-                background-image: url(../images/upcoming-modal/hoverla-day-2-desktop-4x.jpg);
-            }
-            .day-3 {
-                background-image: url(../images/upcoming-modal/hoverla-day-3-desktop-4x.jpg);
-            }
-            .bukovel-1 {
-                background-image: url(../images/upcoming-modal/bukovel-day-1-desktop-4x.jpg);
-            }
-            .bukovel-2 {
-                background-image: url(../images/upcoming-modal/bukovel-day-2-desktop-4x.jpg);
-            }
-            .bukovel-3 {
-                background-image: url(../images/upcoming-modal/bukovel-day-3-desktop-4x.jpg);
-            }
-            .bukovel-4 {
-                background-image: url(../images/upcoming-modal/bukovel-day-4-desktop-4x.jpg);
-            }
-            .carpatians-1 {
-                background-image: url(../images/upcoming-modal/carpatian-day-1-desktop-4x.jpg);
-            }
-            .carpatians-2 {
-                background-image: url(../images/upcoming-modal/carpatian-day-2-desktop-4x.jpg);
-            }
-            .carpatians-3 {
-                background-image: url(../images/upcoming-modal/carpatian-day-3-desktop-4x.jpg);
-            }
-            .carpatians-4 {
-                background-image: url(../images/upcoming-modal/carpatian-day-4-desktop-4x.jpg);
-            }
-            .carpatians-5 {
-                background-image: url(../images/upcoming-modal/carpatian-day-5-desktop-4x.jpg);
-            }
-            .carpatians-6 {
-                background-image: url(../images/upcoming-modal/carpatian-day-6-desktop-4x.jpg);
-            }
-            .carpatians-7 {
-                background-image: url(../images/upcoming-modal/carpatian-day-7-desktop-4x.jpg);
+    @media screen and (min-device-pixel-ratio: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+        bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+        carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+            .#{$item} {
+              background: url('../images/upcoming-modal/#{$item}-desktop-4x.jpg') no-repeat center / contain;
             }
         }
+    }
 
     .swiper-pagination {
         margin-bottom: 55px;
