@@ -83,12 +83,10 @@
         background-image: url(../images/reviews/Review-bg-mobile-1x.jpg);
     }
 
-    .reviews__item-bg.maria {
-        background-image: url(../images/reviews/maria-bg/maria-bg-mobile-1x.jpg);
-    }
-
-    .reviews__item-bg.ostap {
-        background-image: url(../images/reviews/ostap-bg/ostap-bg-mobile-1x.jpg);
+    @each $people in maria, ostap {
+        .reviews__item-bg.#{$people} {
+          background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-1x.jpg');
+        }
     }
 
     .reviews__title {
@@ -117,56 +115,35 @@
         height: 452px;
         padding: 84px 35px 0 35px;
         background-image: url(../images/reviews/Review-bg-mobile-1x.jpg);
+
+        @include retina(2) {
+            background-image: url(../images/reviews/Review-bg-mobile-2x.jpg);
+        }
+
+        @include retina(3) {
+            background-image: url(../images/reviews/Review-bg-mobile-3x.jpg);
+        }
+
+        @include retina(4) {
+            background-image: url(../images/reviews/Review-bg-mobile-4x.jpg);
+        }
     }
 
     @each $people in maria, ostap {
         .reviews__item-bg.#{$people} {
           background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-1x.jpg');
-        }
-    }
 
-    @media screen and (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        .reviews__item {
-            background-image: url(../images/reviews/Review-bg-mobile-2x.jpg);
+        @include retina(2) {
+            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-2x.jpg');
         }
 
-        @each $people in maria, ostap {
-            .reviews__item-bg.#{$people} {
-              background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-2x.jpg');
-            }
-        }
-    }
-
-    @media screen and (min-device-pixel-ratio: 3),
-        (-webkit-min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
-        .reviews__item {
-            background-image: url(../images/reviews/Review-bg-mobile-3x.jpg);
+        @include retina(3) {
+            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-3x.jpg');
         }
 
-        @each $people in maria, ostap {
-            .reviews__item-bg.#{$people} {
-              background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-3x.jpg');
-            }
+        @include retina(4) {
+            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-4x.jpg');
         }
-    }
-
-    @media screen and (min-device-pixel-ratio: 4),
-        (-webkit-min-device-pixel-ratio: 4),
-        screen and (min-resolution: 384dpi),
-        screen and (min-resolution: 4dppx) {
-        .reviews__item {
-            background-image: url(../images/reviews/Review-bg-mobile-4x.jpg);
-        }
-
-        @each $people in maria, ostap {
-            .reviews__item-bg.#{$people} {
-              background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-4x.jpg');
-            }
         }
     }
 
@@ -207,58 +184,37 @@
         @include size(354px, $height: 504px);
         padding: 84px 20px 0 20px;
         background-image: url(../images/reviews/Review-bg-tablet-1x.jpg);
+
+        @include retina(2) {
+            background-image: url(../images/reviews/Review-bg-tablet-2x.jpg);
+        }
+
+        @include retina(3) {
+            background-image: url(../images/reviews/Review-bg-tablet-3x.jpg);
+        }
+
+        @include retina(4) {
+            background-image: url(../images/reviews/Review-bg-tablet-4x.jpg);
+        }
     }
 
     @each $people in maria, ostap {
         .reviews__item-bg.#{$people} {
           background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-1x.jpg');
+          
+          @include retina(2) {
+            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-2x.jpg');
+          }
+
+          @include retina(3) {
+            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-3x.jpg');
+          }
+
+          @include retina(4) {
+            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-4x.jpg');
+          }
         }
     }
-
-    @media screen and (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            .reviews__item {
-                background-image: url(../images/reviews/Review-bg-tablet-2x.jpg);
-            }
-
-            @each $people in maria, ostap {
-                .reviews__item-bg.#{$people} {
-                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-2x.jpg');
-                }
-            }
-        }
-
-        @media screen and (min-device-pixel-ratio: 3),
-        (-webkit-min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
-            .reviews__item {
-                background-image: url(../images/reviews/Review-bg-tablet-3x.jpg);
-            }
-
-            @each $people in maria, ostap {
-                .reviews__item-bg.#{$people} {
-                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-3x.jpg');
-                }
-            }
-        }
-
-        @media screen and (min-device-pixel-ratio: 4),
-        (-webkit-min-device-pixel-ratio: 4),
-        screen and (min-resolution: 384dpi),
-        screen and (min-resolution: 4dppx) {
-            .reviews__item {
-                background-image: url(../images/reviews/Review-bg-tablet-4x.jpg);
-            }
-
-            @each $people in maria, ostap {
-                .reviews__item-bg.#{$people} {
-                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-4x.jpg');
-                }
-            }
-        }
 
     .reviews__title {
         font-size: getSize('large');
@@ -295,58 +251,37 @@
         @include size(377px, $height: 570px);
         padding: 72px 28px 0 28px;
         background-image: url(../images/reviews/Review-bg-desk-1x.jpg);
+
+        @include retina(2) {
+            background-image: url(../images/reviews/Review-bg-desk-2x.jpg);
+        }
+
+        @include retina(3) {
+            background-image: url(../images/reviews/Review-bg-desk-3x.jpg);
+        }
+
+        @include retina(4) {
+            background-image: url(../images/reviews/Review-bg-desk-4x.jpg);
+        }
     }
 
     @each $people in maria, ostap, anita {
         .reviews__item-bg.#{$people} {
           background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-1x.jpg');
+        
+          @include retina(2) {
+            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-2x.jpg');
+          }
+
+          @include retina(3) {
+            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-3x.jpg');
+          }
+
+          @include retina(4) {
+            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-4x.jpg');
+          }
         }
     }
-
-    @media screen and (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            .reviews__item {
-                background-image: url(../images/reviews/Review-bg-desk-2x.jpg);
-            }
-            
-            @each $people in maria, ostap, anita {
-                .reviews__item-bg.#{$people} {
-                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-2x.jpg');
-                }
-            }
-        }
-
-        @media screen and (min-device-pixel-ratio: 3),
-        (-webkit-min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
-            .reviews__item {
-                background-image: url(../images/reviews/Review-bg-desk-3x.jpg);
-            }
-            
-            @each $people in maria, ostap, anita {
-                .reviews__item-bg.#{$people} {
-                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-3x.jpg');
-                }
-            }
-        }
-
-        @media screen and (min-device-pixel-ratio: 4),
-        (-webkit-min-device-pixel-ratio: 4),
-        screen and (min-resolution: 384dpi),
-        screen and (min-resolution: 4dppx) {
-            .reviews__item {
-                background-image: url(../images/reviews/Review-bg-desk-4x.jpg);
-            }
-            
-            @each $people in maria, ostap, anita {
-                .reviews__item-bg.#{$people} {
-                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-4x.jpg');
-                }
-            }
-        }
 
     .reviews__title {
         font-size: getSize('large-f');
