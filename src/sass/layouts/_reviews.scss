@@ -119,12 +119,10 @@
         background-image: url(../images/reviews/Review-bg-mobile-1x.jpg);
     }
 
-    .reviews__item-bg.maria {
-        background-image: url(../images/reviews/maria-bg/maria-bg-mobile-1x.jpg);
-    }
-
-    .reviews__item-bg.ostap {
-        background-image: url(../images/reviews/ostap-bg/ostap-bg-mobile-1x.jpg);
+    @each $people in maria, ostap {
+        .reviews__item-bg.#{$people} {
+          background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-1x.jpg');
+        }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -135,12 +133,10 @@
             background-image: url(../images/reviews/Review-bg-mobile-2x.jpg);
         }
 
-        .reviews__item-bg.maria {
-            background-image: url(../images/reviews/maria-bg/maria-bg-mobile-2x.jpg);
-        }
-
-        .reviews__item-bg.ostap {
-            background-image: url(../images/reviews/ostap-bg/ostap-bg-mobile-2x.jpg);   
+        @each $people in maria, ostap {
+            .reviews__item-bg.#{$people} {
+              background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-2x.jpg');
+            }
         }
     }
 
@@ -152,12 +148,10 @@
             background-image: url(../images/reviews/Review-bg-mobile-3x.jpg);
         }
 
-        .reviews__item-bg.maria {
-            background-image: url(../images/reviews/maria-bg/maria-bg-mobile-3x.jpg);
-        }
-
-        .reviews__item-bg.ostap {
-            background-image: url(../images/reviews/ostap-bg/ostap-bg-mobile-3x.jpg);   
+        @each $people in maria, ostap {
+            .reviews__item-bg.#{$people} {
+              background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-3x.jpg');
+            }
         }
     }
 
@@ -169,12 +163,10 @@
             background-image: url(../images/reviews/Review-bg-mobile-4x.jpg);
         }
 
-        .reviews__item-bg.maria {
-            background-image: url(../images/reviews/maria-bg/maria-bg-mobile-4x.jpg);
-        }
-
-        .reviews__item-bg.ostap {
-            background-image: url(../images/reviews/ostap-bg/ostap-bg-mobile-4x.jpg);   
+        @each $people in maria, ostap {
+            .reviews__item-bg.#{$people} {
+              background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-4x.jpg');
+            }
         }
     }
 
@@ -217,12 +209,10 @@
         background-image: url(../images/reviews/Review-bg-tablet-1x.jpg);
     }
 
-    .reviews__item-bg.maria {
-        background-image: url(../images/reviews/maria-bg/maria-bg-tablet-1x.jpg);
-    }
-
-    .reviews__item-bg.ostap {
-        background-image: url(../images/reviews/ostap-bg/ostap-bg-tablet-1x.jpg);
+    @each $people in maria, ostap {
+        .reviews__item-bg.#{$people} {
+          background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-1x.jpg');
+        }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -233,12 +223,10 @@
                 background-image: url(../images/reviews/Review-bg-tablet-2x.jpg);
             }
 
-            .reviews__item-bg.maria {
-                background-image: url(../images/reviews/maria-bg/maria-bg-tablet-2x.jpg);
-            }
-
-            .reviews__item-bg.ostap {
-                background-image: url(../images/reviews/ostap-bg/ostap-bg-tablet-2x.jpg);
+            @each $people in maria, ostap {
+                .reviews__item-bg.#{$people} {
+                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-2x.jpg');
+                }
             }
         }
 
@@ -250,12 +238,10 @@
                 background-image: url(../images/reviews/Review-bg-tablet-3x.jpg);
             }
 
-            .reviews__item-bg.maria {
-                background-image: url(../images/reviews/maria-bg/maria-bg-tablet-3x.jpg);
-            }
-
-            .reviews__item-bg.ostap {
-                background-image: url(../images/reviews/ostap-bg/ostap-bg-tablet-3x.jpg);
+            @each $people in maria, ostap {
+                .reviews__item-bg.#{$people} {
+                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-3x.jpg');
+                }
             }
         }
 
@@ -267,12 +253,10 @@
                 background-image: url(../images/reviews/Review-bg-tablet-4x.jpg);
             }
 
-            .reviews__item-bg.maria {
-                background-image: url(../images/reviews/maria-bg/maria-bg-tablet-4x.jpg);
-            }
-
-            .reviews__item-bg.ostap {
-                background-image: url(../images/reviews/ostap-bg/ostap-bg-tablet-4x.jpg);
+            @each $people in maria, ostap {
+                .reviews__item-bg.#{$people} {
+                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-4x.jpg');
+                }
             }
         }
 
@@ -313,16 +297,10 @@
         background-image: url(../images/reviews/Review-bg-desk-1x.jpg);
     }
 
-    .reviews__item-bg.maria {
-        background-image: url(../images/reviews/maria-bg/maria-bg-desk-1x.jpg);
-    }
-
-    .reviews__item-bg.ostap {
-        background-image: url(../images/reviews/ostap-bg/ostap-bg-desk-1x.jpg);
-    }
-
-    .reviews__item-bg.anita {
-        background-image: url(../images/reviews/anita-bg/anita-bg-desk-1x.jpg);
+    @each $people in maria, ostap, anita {
+        .reviews__item-bg.#{$people} {
+          background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-1x.jpg');
+        }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -333,16 +311,10 @@
                 background-image: url(../images/reviews/Review-bg-desk-2x.jpg);
             }
             
-            .reviews__item-bg.maria {
-                background-image: url(../images/reviews/maria-bg/maria-bg-desk-2x.jpg);
-            }
-
-            .reviews__item-bg.ostap {
-                background-image: url(../images/reviews/ostap-bg/ostap-bg-desk-2x.jpg);
-            }
-
-            .reviews__item-bg.anita  {
-                background-image: url(../images/reviews/anita-bg/anita-bg-desk-2x.jpg);
+            @each $people in maria, ostap, anita {
+                .reviews__item-bg.#{$people} {
+                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-2x.jpg');
+                }
             }
         }
 
@@ -354,16 +326,10 @@
                 background-image: url(../images/reviews/Review-bg-desk-3x.jpg);
             }
             
-            .reviews__item-bg.maria {
-                background-image: url(../images/reviews/maria-bg/maria-bg-desk-3x.jpg);
-            }
-
-            .reviews__item-bg.ostap {
-                background-image: url(../images/reviews/ostap-bg/ostap-bg-desk-3x.jpg);
-            }
-
-            .reviews__item-bg.anita  {
-                background-image: url(../images/reviews/anita-bg/anita-bg-desk-3x.jpg);
+            @each $people in maria, ostap, anita {
+                .reviews__item-bg.#{$people} {
+                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-3x.jpg');
+                }
             }
         }
 
@@ -375,16 +341,10 @@
                 background-image: url(../images/reviews/Review-bg-desk-4x.jpg);
             }
             
-            .reviews__item-bg.maria {
-                background-image: url(../images/reviews/maria-bg/maria-bg-desk-4x.jpg);
-            }
-
-            .reviews__item-bg.ostap {
-                background-image: url(../images/reviews/ostap-bg/ostap-bg-desk-4x.jpg);
-            }
-
-            .reviews__item-bg.anita  {
-                background-image: url(../images/reviews/anita-bg/anita-bg-desk-4x.jpg);
+            @each $people in maria, ostap, anita {
+                .reviews__item-bg.#{$people} {
+                  background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-4x.jpg');
+                }
             }
         }
 

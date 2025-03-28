@@ -34,32 +34,20 @@
         margin-bottom: 20px;
     }
 
-    .carpathians {
-        background-image: url(../images/upcoming/carpathians-mobile-1x.jpg);
-    }
-
-    .bukovel {
-        background-image: url(../images/upcoming/bukovel-mobile-1x.jpg);
-    }
-
-    .hoverla {
-        background-image: url(../images/upcoming/hoverla-mobile-1x.jpg);
+    @each $tour in carpathians, bukovel, hoverla {
+        .#{$tour} {
+          background-image: url('../images/upcoming/#{$tour}-mobile-1x.jpg');
+        }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        .carpathians {
-            background-image: url(../images/upcoming/carpathians-mobile-2x.jpg);
-        }
-
-        .bukovel {
-            background-image: url(../images/upcoming/bukovel-mobile-2x.jpg);
-        }
-
-        .hoverla {
-            background-image: url(../images/upcoming/hoverla-mobile-2x.jpg);
+        @each $tour in carpathians, bukovel, hoverla {
+            .#{$tour} {
+              background-image: url('../images/upcoming/#{$tour}-mobile-2x.jpg');
+            }
         }
     }
 
@@ -67,16 +55,10 @@
     (-webkit-min-device-pixel-ratio: 3),
     screen and (min-resolution: 288dpi),
     screen and (min-resolution: 3dppx) {
-        .carpathians {
-            background-image: url(../images/upcoming/carpathians-mobile-3x.jpg);
-        }
-
-        .bukovel {
-            background-image: url(../images/upcoming/bukovel-mobile-3x.jpg);
-        }
-
-        .hoverla {
-            background-image: url(../images/upcoming/hoverla-mobile-3x.jpg);
+        @each $tour in carpathians, bukovel, hoverla {
+            .#{$tour} {
+              background-image: url('../images/upcoming/#{$tour}-mobile-3x.jpg');
+            }
         }
     }
 
@@ -84,16 +66,10 @@
     (-webkit-min-device-pixel-ratio: 4),
     screen and (min-resolution: 384dpi),
     screen and (min-resolution: 4dppx) {
-        .carpathians {
-            background-image: url(../images/upcoming/carpathians-mobile-4x.jpg);
-        }
-
-        .bukovel {
-            background-image: url(../images/upcoming/hoverla-mobile-4x.jpg);
-        }
-
-        .hoverla {
-            background-image: url(../images/upcoming/bukovel-mobile-4x.jpg);
+        @each $tour in carpathians, bukovel, hoverla {
+            .#{$tour} {
+              background-image: url('../images/upcoming/#{$tour}-mobile-4x.jpg');
+            }
         }
     }
 }
@@ -114,49 +90,31 @@
         margin-bottom: 40px;
     }
 
-    .carpathians {
-        background-image: url(../images/upcoming/carpathians-tablet-1x.jpg);
-    }
-
-    .bukovel {
-        background-image: url(../images/upcoming/bukovel-tablet-1x.jpg);
-    }
-
-    .hoverla {
-        background-image: url(../images/upcoming/hoverla-tablet-1x.jpg);
+    @each $tour in carpathians, bukovel, hoverla {
+        .#{$tour} {
+          background-image: url('../images/upcoming/#{$tour}-tablet-1x.jpg');
+        }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        .carpathians {
-            background-image: url(../images/upcoming/carpathians-tablet-2x.jpg);
+        @each $tour in carpathians, bukovel, hoverla {
+        .#{$tour} {
+          background-image: url('../images/upcoming/#{$tour}-tablet-2x.jpg');
         }
-
-        .bukovel {
-            background-image: url(../images/upcoming/bukovel-tablet-2x.jpg);
-        }
-
-        .hoverla {
-            background-image: url(../images/upcoming/hoverla-tablet-2x.jpg);
-        }
+    }
     }
 
     @media screen and (min-device-pixel-ratio: 3),
     (-webkit-min-device-pixel-ratio: 3),
     screen and (min-resolution: 288dpi),
     screen and (min-resolution: 3dppx) {
-        .carpathians {
-            background-image: url(../images/upcoming/carpathians-tablet-3x.jpg);
-        }
-
-        .bukovel {
-            background-image: url(../images/upcoming/bukovel-tablet-3x.jpg);
-        }
-
-        .hoverla {
-            background-image: url(../images/upcoming/hoverla-tablet-3x.jpg);
+        @each $tour in carpathians, bukovel, hoverla {
+            .#{$tour} {
+              background-image: url('../images/upcoming/#{$tour}-tablet-3x.jpg');
+            }
         }
     }
 
@@ -164,16 +122,10 @@
     (-webkit-min-device-pixel-ratio: 4),
     screen and (min-resolution: 384dpi),
     screen and (min-resolution: 4dppx) {
-        .carpathians {
-            background-image: url(../images/upcoming/carpathians-tablet-4x.jpg);
-        }
-
-        .bukovel {
-            background-image: url(../images/upcoming/hoverla-tablet-4x.jpg);
-        }
-
-        .hoverla {
-            background-image: url(../images/upcoming/bukovel-tablet-4x.jpg);
+        @each $tour in carpathians, bukovel, hoverla {
+            .#{$tour} {
+              background-image: url('../images/upcoming/#{$tour}-tablet-4x.jpg');
+            }
         }
     }
 }
@@ -194,32 +146,20 @@
         margin-bottom: 36px;
     }
 
-    .carpathians {
-        background-image: url(../images/upcoming/carpathians-desktop-1x.jpg);
-    }
-
-    .bukovel {
-        background-image: url(../images/upcoming/bukovel-desktop-1x.jpg);
-    }
-
-    .hoverla {
-        background-image: url(../images/upcoming/hoverla-desktop-1x.jpg);
+    @each $tour in carpathians, bukovel, hoverla {
+        .#{$tour} {
+          background-image: url('../images/upcoming/#{$tour}-desktop-1x.jpg');
+        }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        .carpathians {
-            background-image: url(../images/upcoming/carpathians-desktop-2x.jpg);
-        }
-
-        .bukovel {
-            background-image: url(../images/upcoming/bukovel-desktop-2x.jpg);
-        }
-
-        .hoverla {
-            background-image: url(../images/upcoming/hoverla-desktop-2x.jpg);
+        @each $tour in carpathians, bukovel, hoverla {
+            .#{$tour} {
+              background-image: url('../images/upcoming/#{$tour}-desktop-2x.jpg');
+            }
         }
     }
 
@@ -227,16 +167,10 @@
     (-webkit-min-device-pixel-ratio: 3),
     screen and (min-resolution: 288dpi),
     screen and (min-resolution: 3dppx) {
-        .carpathians {
-            background-image: url(../images/upcoming/carpathians-desktop-3x.jpg);
-        }
-
-        .bukovel {
-            background-image: url(../images/upcoming/bukovel-desktop-3x.jpg);
-        }
-
-        .hoverla {
-            background-image: url(../images/upcoming/hoverla-desktop-3x.jpg);
+        @each $tour in carpathians, bukovel, hoverla {
+            .#{$tour} {
+              background-image: url('../images/upcoming/#{$tour}-desktop-3x.jpg');
+            }
         }
     }
 
@@ -244,16 +178,10 @@
     (-webkit-min-device-pixel-ratio: 4),
     screen and (min-resolution: 384dpi),
     screen and (min-resolution: 4dppx) {
-        .carpathians {
-            background-image: url(../images/upcoming/carpathians-desktop-4x.jpg);
-        }
-
-        .bukovel {
-            background-image: url(../images/upcoming/hoverla-desktop-4x.jpg);
-        }
-
-        .hoverla {
-            background-image: url(../images/upcoming/bukovel-desktop-4x.jpg);
+        @each $tour in carpathians, bukovel, hoverla {
+            .#{$tour} {
+              background-image: url('../images/upcoming/#{$tour}-desktop-4x.jpg');
+            }
         }
     }
 }
