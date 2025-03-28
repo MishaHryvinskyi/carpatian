@@ -58,9 +58,7 @@
 
 .reviews__icon-around {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, center);
     @include size(40px);
     z-index: -1;
 

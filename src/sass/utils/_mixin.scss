@@ -24,4 +24,10 @@
            screen and (min-resolution: #{$ratio}dppx) {
       @content;
     }
-  }
+}
+
+@mixin flex ($a-i, $j-c){
+    display: flex;
+    align-items: $a-i;
+    justify-content: $j-c;
+}

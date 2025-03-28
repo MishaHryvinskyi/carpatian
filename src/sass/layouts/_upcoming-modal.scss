@@ -69,9 +69,7 @@
     cursor: pointer;
     position: absolute;
     @include size(40px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
     border: none;
     background-color: transparent;
     z-index: 130;
