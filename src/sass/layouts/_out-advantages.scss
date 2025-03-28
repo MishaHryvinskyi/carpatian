@@ -40,9 +40,7 @@
         display: block;
         margin: 0 8px 0 30px;
         @include size(24px);
-        background-image: url(../images/reviews/star.png);
-        background-size: contain;
-        background-repeat: no-repeat;
+        background: url(../images/reviews/star.png) no-repeat center / contain;
     }
 }
 
