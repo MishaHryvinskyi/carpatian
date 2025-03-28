@@ -212,8 +212,7 @@
     }
 
     .reviews__item {
-        width: 354px;
-        height: 504px;
+        @include size(354px, $height: 504px);
         padding: 84px 20px 0 20px;
         background-image: url(../images/reviews/Review-bg-tablet-1x.jpg);
     }
@@ -309,8 +308,7 @@
     }
 
     .reviews__item {
-        width: 377px;
-        height: 570px;
+        @include size(377px, $height: 570px);
         padding: 72px 28px 0 28px;
         background-image: url(../images/reviews/Review-bg-desk-1x.jpg);
     }

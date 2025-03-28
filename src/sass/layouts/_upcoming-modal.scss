@@ -109,8 +109,7 @@
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
    .upcoming-modal {
-        width: 315px;
-        height: 624px;
+        @include size(315px, $height: 624px);
    } 
    
    .upcoming-modal__panel {
@@ -354,8 +353,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
     .upcoming-modal {
-        width: 728px;
-        height: 734px;
+        @include size(728px, $height: 734px);
     }
 
     .upcoming-modal__panel {
@@ -596,8 +594,7 @@
 
 @media screen and (min-width: 1440px) {
     .upcoming-modal {
-        width: 1170px;
-        height: 976px;
+        @include size(1170px, $height: 976px);
     }
 
     .upcoming-modal__panel {

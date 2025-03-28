@@ -180,8 +180,7 @@
 
 @media screen and (min-width: 1440px) {
     .upcoming__item {
-        width: 377px;
-        height: 718px;
+        @include size(377px, $height: 718px);
         padding: 482px 20px 48px 20px;
     }
 

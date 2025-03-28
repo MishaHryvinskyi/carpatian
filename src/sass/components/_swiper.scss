@@ -52,8 +52,7 @@
 
   .gallery__button-prev > .swiper-svg,
   .gallery__button-next > .swiper-svg {
-    width: 15px;
-    height: 27px;
+    @include size(15px, $height:27px);
   }
 }
 
@@ -138,7 +137,6 @@
 
 .gallery__button-prev > .swiper-svg,
 .gallery__button-next > .swiper-svg {
-  width: 25px;
-  height: 37px;
+  @include size(25px, $height: 37px);
 }
 }

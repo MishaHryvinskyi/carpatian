@@ -105,8 +105,7 @@
 
     .mobile-menu {
         padding: 132px 0 0 32px;
-        width: 233px;
-        height: 787px;
+        @include size(233px, $height: 787px);
     }
 
     .header-nav__list {
@@ -129,8 +128,7 @@
 
     .mobile-menu {
         padding: 184px 0 0 82px;
-        width: 374px;
-        height: 818px;
+        @include size(374px, $height: 818px);
     }
 
     .header-nav__list {
