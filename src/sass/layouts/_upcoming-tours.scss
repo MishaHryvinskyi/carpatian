@@ -34,7 +34,7 @@
     margin-bottom: 20px;
   }
 
-  @each $tour in carpathians, bukovel, hoverla {
+  @each $tour in $tours {
     .#{$tour} {
       background-image: url('../images/upcoming/#{$tour}-mobile-1x.jpg');
   
@@ -69,7 +69,7 @@
     margin-bottom: 40px;
   }
 
-  @each $tour in carpathians, bukovel, hoverla {
+  @each $tour in $tours {
     .#{$tour} {
       background-image: url('../images/upcoming/#{$tour}-tablet-1x.jpg');
   
@@ -103,7 +103,7 @@
     font-size: getSize('large');
     margin-bottom: 36px;
   }
-  @each $tour in carpathians, bukovel, hoverla {
+  @each $tour in $tours {
     .#{$tour} {
       background-image: url('../images/upcoming/#{$tour}-desktop-1x.jpg');
   

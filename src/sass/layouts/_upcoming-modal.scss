@@ -132,9 +132,7 @@
         }
     }
     
-    @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
-    bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
-    carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+    @each $item in $tours-day {
   
   .#{$item} {
     background: url('../images/upcoming-modal/#{$item}-mobile-1x.jpg') no-repeat center / contain;
@@ -197,9 +195,7 @@
         padding: 12px 253px 12px 60px;
     }
     
-    @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
-    bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
-    carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+    @each $item in $tours-day {
   
   .#{$item} {
     background: url('../images/upcoming-modal/#{$item}-tablet-1x.jpg') no-repeat center / contain;
@@ -272,9 +268,7 @@
         padding: 7px 307px 7px 100px;
     }
     
-    @each $item in hoverla-day-1, hoverla-day-2, hoverla-day-3, 
-    bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
-    carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4, carpatian-day-5, carpatian-day-6, carpatian-day-7 {
+    @each $item in $tours-day {
   
   .#{$item} {
     background: url('../images/upcoming-modal/#{$item}-desktop-1x.jpg') no-repeat center / contain;

@@ -22,6 +22,13 @@ $size: (
     'big-88': 88px,
 );
 
+$tours: carpathians, bukovel, hoverla;
+
+$tours-day: hoverla-day-1, hoverla-day-2, hoverla-day-3, 
+bukovel-day-1, bukovel-day-2, bukovel-day-3, bukovel-day-4, 
+carpatian-day-1, carpatian-day-2, carpatian-day-3, carpatian-day-4,
+carpatian-day-5, carpatian-day-6, carpatian-day-7;
+
 @function getColor($key) {
     @return map-get($colors, $key);
 }
