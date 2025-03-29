@@ -8,9 +8,7 @@
 }
 
 .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, center);
 }
 
 .swiper-slide img {
@@ -20,9 +18,7 @@
 }
 
 .gallery__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(center, center);
 }
 
 .gallery__button-next,
@@ -120,22 +116,22 @@
     margin-bottom: 0;
   }
 
-.gallery__button-next,
-.gallery__button-prev {
-  @include size(40px);
-  padding: 0;
-}
+  .gallery__button-next,
+  .gallery__button-prev {
+    @include size(40px);
+    padding: 0;
+  }
 
-.gallery__button-next {
-  margin-left: 30px;
-}
+  .gallery__button-next {
+    margin-left: 30px;
+  }
 
-.gallery__button-prev {
-  margin-right: 30px;
-}
+  .gallery__button-prev {
+    margin-right: 30px;
+  }
 
-.gallery__button-prev > .swiper-svg,
-.gallery__button-next > .swiper-svg {
-  @include size(25px, $height: 37px);
-}
+  .gallery__button-prev > .swiper-svg,
+  .gallery__button-next > .swiper-svg {
+    @include size(25px, $height: 37px);
+  }
 }

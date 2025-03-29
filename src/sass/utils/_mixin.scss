@@ -26,8 +26,12 @@
     }
 }
 
-@mixin flex ($a-i, $j-c){
+@mixin flex ($a-i: null, $j-c: null){
     display: flex;
-    align-items: $a-i;
-    justify-content: $j-c;
+    @if $a-i {
+        align-items: $a-i;
+    }
+    @if $j-c {
+        justify-content: $j-c;
+    }
 }

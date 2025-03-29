@@ -32,8 +32,7 @@
 }
 
 .description-star {
-    display: flex;
-    align-items: center;
+    @include flex(center);
 
     &::before {
         content: "";
@@ -80,7 +79,6 @@
 @media screen and (min-width: 1440px) {
     .advantages__list {
         font-size: getSize('large');
-
         background: 
         url('../images/our-advantages/advantages-2-desktop-1x.jpg') no-repeat top left,
         url('../images/our-advantages/advantages-center-1x.jpg') no-repeat center center,

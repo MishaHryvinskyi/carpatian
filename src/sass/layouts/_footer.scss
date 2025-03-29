@@ -15,8 +15,7 @@
 }
 
 .footer__link {
-    display: flex;
-    align-items: center;
+    @include flex(center);
 
     & > svg {
         fill: getColor('primary');
@@ -44,8 +43,7 @@
     }
 
     .footer-address {
-        display: flex;
-        justify-content: center;
+        @include flex(null, center);
     }
 
     .footer__list {

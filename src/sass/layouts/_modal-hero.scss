@@ -49,9 +49,8 @@
 }
 
 .checkbox-wrapper {
-    display: flex;
+    @include flex(start);
     flex-direction: column;
-    text-align: start;
 }
 
 .modal-hero__input {
@@ -62,8 +61,7 @@
 }
 
 .modal-hero__check {
-    display: flex;
-    align-items: center;
+    @include flex(center);
 
     & > input {
         margin-right: 14px;

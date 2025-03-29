@@ -1,8 +1,7 @@
 .hero {
     position: relative;
-    display: flex;
+    @include flex(null, center);
     flex-direction: column;
-    justify-content: center;
     height: 788px;
     color: getColor('primary');
     text-align: center;
@@ -116,8 +115,7 @@
 
     .hero-wrapper {
         margin: 0 0 0 270px;
-        display: flex;
-        justify-content: space-between;
+        @include flex(null, space-between);
         width: 900px;
     }
 }
