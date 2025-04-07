@@ -15,10 +15,6 @@
         background-image: url(../images/our-advantages/advantages-mobile-3x.jpg);
     }
 
-    @include retina(4) {
-        background-image: url(../images/our-advantages/advantages-mobile-4x.jpg);
-    }
-
     & .advantages__item:not(:last-child) {
         margin-bottom: 28px;
     }

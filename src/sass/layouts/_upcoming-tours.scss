@@ -45,10 +45,6 @@
       @include retina(3) {
         background-image: url('../images/upcoming/#{$tour}-mobile-3x.jpg');
       }
-  
-      @include retina(4) {
-        background-image: url('../images/upcoming/#{$tour}-mobile-4x.jpg');
-      }
     }
   }
 }
@@ -80,10 +76,6 @@
       @include retina(3) {
         background-image: url('../images/upcoming/#{$tour}-tablet-3x.jpg');
       }
-  
-      @include retina(4) {
-        background-image: url('../images/upcoming/#{$tour}-tablet-4x.jpg');
-      }
     }
   }
 }
@@ -113,10 +105,6 @@
   
       @include retina(3) {
         background-image: url('../images/upcoming/#{$tour}-desktop-3x.jpg');
-      }
-  
-      @include retina(4) {
-        background-image: url('../images/upcoming/#{$tour}-desktop-4x.jpg');
       }
     }
   }

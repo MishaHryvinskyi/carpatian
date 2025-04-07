@@ -144,10 +144,6 @@
     @include retina(3) {
       background: url('../images/upcoming-modal/#{$item}-mobile-3x.jpg') no-repeat center / contain;
     }
-
-    @include retina(4) {
-      background: url('../images/upcoming-modal/#{$item}-mobile-4x.jpg') no-repeat center / contain;
-    }
   }
 }
 
@@ -206,10 +202,6 @@
 
     @include retina(3) {
       background: url('../images/upcoming-modal/#{$item}-tablet-3x.jpg') no-repeat center / contain;
-    }
-
-    @include retina(4) {
-      background: url('../images/upcoming-modal/#{$item}-tablet-4x.jpg') no-repeat center / contain;
     }
   }
 }
@@ -279,10 +271,6 @@
 
     @include retina(3) {
       background: url('../images/upcoming-modal/#{$item}-desktop-3x.jpg') no-repeat center / contain;
-    }
-
-    @include retina(4) {
-      background: url('../images/upcoming-modal/#{$item}-desktop-4x.jpg') no-repeat center / contain;
     }
   }
 }

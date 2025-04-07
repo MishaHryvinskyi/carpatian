@@ -11,10 +11,6 @@
     @include retina(3) {
         background-image: url(../images/questions/questyons-bg-mobile-3x.jpg);
     }
-
-    @include retina(4) {
-        background-image: url(../images/questions/questyons-bg-mobile-4x.jpg);
-    }
 }
 
 .questions__wrapper {
@@ -73,10 +69,6 @@
         @include retina(3) {
             background-image: url(../images/questions/questyons-bg-tablet-3x.jpg);
         }
-    
-        @include retina(4) {
-            background-image: url(../images/questions/questyons-bg-tablet-4x.jpg);
-        }
     } 
 
     .questions__wrapper {
@@ -119,10 +111,6 @@
     
         @include retina(3) {
             background-image: url(../images/questions/questyons-bg-desk-3x.jpg);
-        }
-    
-        @include retina(4) {
-            background-image: url(../images/questions/questyons-bg-desk-4x.jpg);
         }
     } 
 

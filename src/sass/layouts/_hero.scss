@@ -14,10 +14,6 @@
     @include retina(3) {
         background-image: url('../images/hero/hero-bg-mobile-3x.jpg');
     }
-
-    @include retina(4) {
-        background-image: url('../images/hero/hero-bg-mobile-4x.jpg');
-    }
 }
 
 .hero__title {
@@ -49,10 +45,6 @@
     
         @include retina(3) {
             background-image: url('../images/hero/hero-bg-tablet-3x.jpg');
-        }
-    
-        @include retina(4) {
-            background-image: url('../images/hero/hero-bg-tablet-4x.jpg');
         }
     }
 
@@ -87,10 +79,6 @@
     
         @include retina(3) {
             background-image: url('../images/hero/hero-bg-desktop-3x.jpg');
-        }
-    
-        @include retina(4) {
-            background-image: url('../images/hero/hero-bg-desktop-4x.jpg');
         }
     }
 

@@ -121,10 +121,6 @@
         @include retina(3) {
             background-image: url(../images/reviews/Review-bg-mobile-3x.jpg);
         }
-
-        @include retina(4) {
-            background-image: url(../images/reviews/Review-bg-mobile-4x.jpg);
-        }
     }
 
     @each $people in maria, ostap {
@@ -137,10 +133,6 @@
 
         @include retina(3) {
             background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-3x.jpg');
-        }
-
-        @include retina(4) {
-            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-mobile-4x.jpg');
         }
         }
     }
@@ -190,10 +182,6 @@
         @include retina(3) {
             background-image: url(../images/reviews/Review-bg-tablet-3x.jpg);
         }
-
-        @include retina(4) {
-            background-image: url(../images/reviews/Review-bg-tablet-4x.jpg);
-        }
     }
 
     @each $people in maria, ostap {
@@ -206,10 +194,6 @@
 
           @include retina(3) {
             background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-3x.jpg');
-          }
-
-          @include retina(4) {
-            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-tablet-4x.jpg');
           }
         }
     }
@@ -257,10 +241,6 @@
         @include retina(3) {
             background-image: url(../images/reviews/Review-bg-desk-3x.jpg);
         }
-
-        @include retina(4) {
-            background-image: url(../images/reviews/Review-bg-desk-4x.jpg);
-        }
     }
 
     @each $people in maria, ostap, anita {
@@ -273,10 +253,6 @@
 
           @include retina(3) {
             background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-3x.jpg');
-          }
-
-          @include retina(4) {
-            background-image: url('../images/reviews/#{$people}-bg/#{$people}-bg-desk-4x.jpg');
           }
         }
     }
